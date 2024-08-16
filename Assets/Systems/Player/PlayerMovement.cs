@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (desiredDirection.magnitude > 0.1f)
         {
-            rb.velocity = desiredDirection.normalized * movementSpeed * Time.deltaTime;
+            rb.velocity = desiredDirection.normalized * movementSpeed;
         }
         else
         {

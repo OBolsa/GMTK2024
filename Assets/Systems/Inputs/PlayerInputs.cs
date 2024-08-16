@@ -44,6 +44,33 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""a2f2890e-080e-4973-82ae-b2fbc0389562"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""ClickLetf"",
+                    ""type"": ""Button"",
+                    ""id"": ""c1cddea1-3570-45da-8197-107f085c87ce"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""MoveMouse"",
+                    ""type"": ""Button"",
+                    ""id"": ""7b0b6b61-4e1f-44a4-84a1-187ee6977384"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -112,6 +139,39 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
                     ""action"": ""Mesure"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b89bbd9c-80a6-4fbc-9009-e2a8c045aa45"",
+                    ""path"": ""<Keyboard>/p"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c1bafd0f-6e56-4541-ba3e-e65c8db43a16"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ClickLetf"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1d8c9141-b989-4d25-a3b5-86ba6fca4417"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveMouse"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -128,6 +188,9 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
         m_World = asset.FindActionMap("World", throwIfNotFound: true);
         m_World_Movement = m_World.FindAction("Movement", throwIfNotFound: true);
         m_World_Mesure = m_World.FindAction("Mesure", throwIfNotFound: true);
+        m_World_Pause = m_World.FindAction("Pause", throwIfNotFound: true);
+        m_World_ClickLetf = m_World.FindAction("ClickLetf", throwIfNotFound: true);
+        m_World_MoveMouse = m_World.FindAction("MoveMouse", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -191,12 +254,18 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
     private List<IWorldActions> m_WorldActionsCallbackInterfaces = new List<IWorldActions>();
     private readonly InputAction m_World_Movement;
     private readonly InputAction m_World_Mesure;
+    private readonly InputAction m_World_Pause;
+    private readonly InputAction m_World_ClickLetf;
+    private readonly InputAction m_World_MoveMouse;
     public struct WorldActions
     {
         private @PlayerInputs m_Wrapper;
         public WorldActions(@PlayerInputs wrapper) { m_Wrapper = wrapper; }
         public InputAction @Movement => m_Wrapper.m_World_Movement;
         public InputAction @Mesure => m_Wrapper.m_World_Mesure;
+        public InputAction @Pause => m_Wrapper.m_World_Pause;
+        public InputAction @ClickLetf => m_Wrapper.m_World_ClickLetf;
+        public InputAction @MoveMouse => m_Wrapper.m_World_MoveMouse;
         public InputActionMap Get() { return m_Wrapper.m_World; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -212,6 +281,15 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
             @Mesure.started += instance.OnMesure;
             @Mesure.performed += instance.OnMesure;
             @Mesure.canceled += instance.OnMesure;
+            @Pause.started += instance.OnPause;
+            @Pause.performed += instance.OnPause;
+            @Pause.canceled += instance.OnPause;
+            @ClickLetf.started += instance.OnClickLetf;
+            @ClickLetf.performed += instance.OnClickLetf;
+            @ClickLetf.canceled += instance.OnClickLetf;
+            @MoveMouse.started += instance.OnMoveMouse;
+            @MoveMouse.performed += instance.OnMoveMouse;
+            @MoveMouse.canceled += instance.OnMoveMouse;
         }
 
         private void UnregisterCallbacks(IWorldActions instance)
@@ -222,6 +300,15 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
             @Mesure.started -= instance.OnMesure;
             @Mesure.performed -= instance.OnMesure;
             @Mesure.canceled -= instance.OnMesure;
+            @Pause.started -= instance.OnPause;
+            @Pause.performed -= instance.OnPause;
+            @Pause.canceled -= instance.OnPause;
+            @ClickLetf.started -= instance.OnClickLetf;
+            @ClickLetf.performed -= instance.OnClickLetf;
+            @ClickLetf.canceled -= instance.OnClickLetf;
+            @MoveMouse.started -= instance.OnMoveMouse;
+            @MoveMouse.performed -= instance.OnMoveMouse;
+            @MoveMouse.canceled -= instance.OnMoveMouse;
         }
 
         public void RemoveCallbacks(IWorldActions instance)
@@ -252,5 +339,8 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
     {
         void OnMovement(InputAction.CallbackContext context);
         void OnMesure(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
+        void OnClickLetf(InputAction.CallbackContext context);
+        void OnMoveMouse(InputAction.CallbackContext context);
     }
 }

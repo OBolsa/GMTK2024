@@ -15,4 +15,4 @@ MonoBehaviour:
   itemName: Madeira
   itemDescription: 
   itemSprite: {fileID: 0}
-  itemRequisitions: []
+  itemRequirements: []

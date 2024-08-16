@@ -15,4 +15,4 @@ MonoBehaviour:
   itemName: Pena
   itemDescription: 
   itemSprite: {fileID: 0}
-  itemRequisitions: []
+  itemRequirements: []

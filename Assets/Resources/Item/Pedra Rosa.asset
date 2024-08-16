@@ -15,4 +15,4 @@ MonoBehaviour:
   itemName: Pedra Rosa
   itemDescription: 
   itemSprite: {fileID: 0}
-  itemRequisitions: []
+  itemRequirements: []

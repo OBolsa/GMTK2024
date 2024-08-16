@@ -15,4 +15,8 @@ MonoBehaviour:
   itemName: Pomba de Prata
   itemDescription: 
   itemSprite: {fileID: 0}
-  itemRequisitions: []
+  itemRequirements:
+  - {fileID: 11400000, guid: b02794ca47115214b833dc0f0c22cc18, type: 2}
+  - {fileID: 11400000, guid: b02794ca47115214b833dc0f0c22cc18, type: 2}
+  - {fileID: 11400000, guid: 483974416dc821742978d433d9c590bf, type: 2}
+  - {fileID: 11400000, guid: 483974416dc821742978d433d9c590bf, type: 2}

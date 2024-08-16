@@ -15,4 +15,4 @@ MonoBehaviour:
   itemName: Prata
   itemDescription: 
   itemSprite: {fileID: 0}
-  itemRequisitions: []
+  itemRequirements: []

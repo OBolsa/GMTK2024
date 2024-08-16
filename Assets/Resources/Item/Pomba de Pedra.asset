@@ -15,4 +15,8 @@ MonoBehaviour:
   itemName: Pomba de Pedra
   itemDescription: 
   itemSprite: {fileID: 0}
-  itemRequisitions: []
+  itemRequirements:
+  - {fileID: 11400000, guid: f027a4d9d0cb52e489b24b5118982966, type: 2}
+  - {fileID: 11400000, guid: f027a4d9d0cb52e489b24b5118982966, type: 2}
+  - {fileID: 11400000, guid: cd8fd75f2e093954f85fa21a160b3bb3, type: 2}
+  - {fileID: 11400000, guid: cd8fd75f2e093954f85fa21a160b3bb3, type: 2}

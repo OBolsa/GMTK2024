@@ -7,17 +7,17 @@ public class ItemInfo : ScriptableObject
     public string itemName;
     public string itemDescription;
     public Sprite itemSprite;
-    public List<ItemInfo> itemRequisitions;
+    public List<ItemInfo> itemRequirements;
 
     public bool HaveRequisitions(List<ItemInfo> items)
     {
         List<ItemInfo> itemsInBag = new List<ItemInfo>(items);
 
-        for (int i = 0; i < itemRequisitions.Count; i++)
+        for (int i = 0; i < itemRequirements.Count; i++)
         {
-            if (itemsInBag.Contains(itemRequisitions[i]))
+            if (itemsInBag.Contains(itemRequirements[i]))
             {
-                itemsInBag.Remove(itemRequisitions[i]);
+                itemsInBag.Remove(itemRequirements[i]);
             }
             else
             {

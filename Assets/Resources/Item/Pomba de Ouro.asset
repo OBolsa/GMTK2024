@@ -15,4 +15,8 @@ MonoBehaviour:
   itemName: Pomba de Ouro
   itemDescription: 
   itemSprite: {fileID: 0}
-  itemRequisitions: []
+  itemRequirements:
+  - {fileID: 11400000, guid: b02794ca47115214b833dc0f0c22cc18, type: 2}
+  - {fileID: 11400000, guid: b02794ca47115214b833dc0f0c22cc18, type: 2}
+  - {fileID: 11400000, guid: c0c4dfbcf8b04ab4cb686d92d9360b00, type: 2}
+  - {fileID: 11400000, guid: c0c4dfbcf8b04ab4cb686d92d9360b00, type: 2}

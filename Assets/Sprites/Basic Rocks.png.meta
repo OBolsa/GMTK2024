@@ -610,6 +610,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Basic Rocks_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4504f0f07ba94e74cafb4cf2d73df3b0
+      internalID: -406220094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Basic Rocks_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6ef720d79c27ce43948a00551e9601c
+      internalID: 1686191855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -636,6 +678,8 @@ TextureImporter:
       Basic Rocks_2: -672466758
       Basic Rocks_20: 1810153587
       Basic Rocks_21: -1680183554
+      Basic Rocks_22: -406220094
+      Basic Rocks_23: 1686191855
       Basic Rocks_3: 282945380
       Basic Rocks_4: 586198904
       Basic Rocks_5: -1751526430

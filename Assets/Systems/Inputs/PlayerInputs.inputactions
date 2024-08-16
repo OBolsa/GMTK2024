@@ -15,7 +15,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Mesure",
+                    "name": "Action",
                     "type": "Button",
                     "id": "737b53a0-477a-4392-9165-b8fada752036",
                     "expectedControlType": "Button",
@@ -114,7 +114,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "World",
-                    "action": "Mesure",
+                    "action": "Action",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

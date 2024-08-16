@@ -10,3 +10,4 @@ public class PlayerInputManager : MonoBehaviour
         Inputs.Enable();
     }
 }
+

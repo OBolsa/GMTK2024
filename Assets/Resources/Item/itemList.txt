@@ -1,0 +1,31 @@
+Name	Description	Sprite Name	Requisito 1	Requisito 2	Requisito 3	Requisito 4	Requisito 5	Requisito 6	Dificuldade	Feito
+Macaco de Madeira			Madeira	Madeira	Madeira				6	FALSE
+Macaco de Pedra			Pedra	Pedra	Madeira				8	FALSE
+Macaco de Metal			Pedra	Pedra	Metal				10	FALSE
+Macaco de Prata			Metal	Metal	Prata				13	FALSE
+Macaco de Ouro			Metal	Metal	Ouro				14	FALSE
+Pomba de Madeira			Madeira	Madeira	Madeira	Madeira			8	FALSE
+Pomba de Pedra			Pedra	Pedra	Madeira	Madeira			10	FALSE
+Pomba de Metal			Metal	Metal	Pedra	Pedra			14	FALSE
+Pomba de Prata			Metal	Metal	Prata	Prata			18	FALSE
+Pomba de Ouro			Metal	Metal	Ouro	Ouro			20	FALSE
+Madeira									2	FALSE
+Pedra									3	FALSE
+Pena									1	FALSE
+Pedra Vermelha									3	FALSE
+Pedra Azul									3	FALSE
+Pedra Amarela									3	FALSE
+Pedra Rosa									3	FALSE
+Metal									4	FALSE
+Prata									5	FALSE
+Ouro									6	FALSE
+									0	FALSE
+									0	FALSE
+									0	FALSE
+									0	FALSE
+									0	FALSE
+									0	FALSE
+									0	FALSE
+									0	FALSE
+									0	FALSE
+									0	FALSE

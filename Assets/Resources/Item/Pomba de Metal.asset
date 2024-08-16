@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f511310fe77ce5d45af1d1e18e30637c, type: 3}
+  m_Name: Pomba de Metal
+  m_EditorClassIdentifier: 
+  itemName: Pomba de Metal
+  itemDescription: 
+  itemSprite: {fileID: 0}
+  itemRequirements:
+  - {fileID: 11400000, guid: b02794ca47115214b833dc0f0c22cc18, type: 2}
+  - {fileID: 11400000, guid: b02794ca47115214b833dc0f0c22cc18, type: 2}
+  - {fileID: 11400000, guid: f027a4d9d0cb52e489b24b5118982966, type: 2}
+  - {fileID: 11400000, guid: f027a4d9d0cb52e489b24b5118982966, type: 2}

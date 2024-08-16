@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -6,6 +7,8 @@ public class MapGenerator : MonoBehaviour
     [SerializeField] private Texture2D textureMap;
     [SerializeField] private Tilemap tilemap;
     [SerializeField] private TileBase tileToPaint;
+
+    [SerializeField] private List<MapPainterTile> mapPainterTiles;
 
     [ContextMenu("Setup Tile")]
     public void PaintMap()
@@ -34,4 +37,11 @@ public class MapGenerator : MonoBehaviour
             }
         }
     }
+}
+
+[System.Serializable]
+public class MapPainterTile
+{
+    public Color color = Color.white;
+    public TileBase tile;
 }

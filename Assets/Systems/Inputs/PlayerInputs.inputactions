@@ -13,6 +13,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Mesure",
+                    "type": "Button",
+                    "id": "737b53a0-477a-4392-9165-b8fada752036",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -70,6 +79,17 @@
                     "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "60d6a207-da43-48b2-9cf7-7acd9a4b661d",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "World",
+                    "action": "Mesure",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

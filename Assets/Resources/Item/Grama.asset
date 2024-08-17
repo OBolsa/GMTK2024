@@ -16,4 +16,4 @@ MonoBehaviour:
   itemDescription: 
   itemSprite: {fileID: -716850702, guid: d475143a289a8a147a903369121946e7, type: 3}
   itemBuffs: 
-  itemLife: 3
+  itemRequirements: []

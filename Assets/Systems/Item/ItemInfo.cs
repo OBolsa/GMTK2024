@@ -8,26 +8,7 @@ public class ItemInfo : ScriptableObject
     public string itemDescription;
     public Sprite itemSprite;
     public List<BuffType> itemBuffs;
-    public List<ItemInfo> itemRequirements;
-
-    public bool HaveRequisitions(List<ItemInfo> items)
-    {
-        List<ItemInfo> itemsInBag = new List<ItemInfo>(items);
-
-        for (int i = 0; i < itemRequirements.Count; i++)
-        {
-            if (itemsInBag.Contains(itemRequirements[i]))
-            {
-                itemsInBag.Remove(itemRequirements[i]);
-            }
-            else
-            {
-                return false;
-            }
-        }
-
-        return true;
-    }
+    public int itemLife;
 }
 
 public enum BuffType { None, Yellow, Red, Blue }

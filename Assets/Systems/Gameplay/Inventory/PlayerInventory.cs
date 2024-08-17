@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour
 {
+    public static PlayerInventory instance;
     private List<ItemInfo> itemInventory;
 
 
     private void Start()
     {
+        if (instance == null) instance = this;
         itemInventory = new List<ItemInfo>();
     }
 
@@ -36,7 +38,15 @@ public class PlayerInventory : MonoBehaviour
 
     public ItemInfo[] GetAllInventoryItems() 
     {
-        return itemInventory;
+        ItemInfo[] items = new ItemInfo[0];
+        
+        for(int i = 0; i < itemInventory.Count; i++) 
+        {
+            items[i] = itemInventory[i];
+
+        }
+
+        return items;
     }
 
 }

@@ -9,12 +9,13 @@ public class UI_Inventario : MonoBehaviour
 {
     // Start is called before the first frame update
     //public int totalQuantityItems;
+    
     public GameObject iconMaterial;
     public GameObject listaMateriais;
-    public ItemInfo [] allItems;
+    public List<ItemInfo> allItems;
     void Start()
     {
-        
+        allItems = new List<ItemInfo>();
     }
 
     // Update is called once per frame
@@ -23,30 +24,30 @@ public class UI_Inventario : MonoBehaviour
         
     }
      
-    public  void addMaterialUI (String nomeItem)
+    public  void addMaterial_UI (ItemInfo Item)
     {
-          foreach (ItemInfo item in allItems)
-        {
-            if (item.itemName == nomeItem)
-            {
+      
                GameObject newItem = Instantiate(iconMaterial, this.transform.position, Quaternion.identity);
                newItem.transform.parent = listaMateriais.transform;
-               newItem.GetComponent<Image>().sprite = item.itemSprite;
-               newItem.name = nomeItem;
-               break;
-            }
-        }
+               newItem.GetComponent<Image>().sprite = Item.itemSprite;
+               newItem.transform.SetSiblingIndex(0);
+               newItem.name = Item.itemName;
+               allItems.Add(Item);
 
     } 
 
-    public void removeMaterialUI (String nomeItem)
+    public void removeMaterial_UI (ItemInfo Item)
     {
-        Transform childTransform = listaMateriais.transform.Find(nomeItem);
 
-        Destroy(childTransform.gameObject);
+
+        
     }
 
 
+    public void removeMaterialInHand_UI()
+    {
+        
+    }
 
 
 }

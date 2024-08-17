@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Madeira
   itemDescription: 
-  itemSprite: {fileID: 0}
+  itemSprite: {fileID: 21300000, guid: 96ea9d357deeced409beba0c85bd6590, type: 3}
   itemRequirements: []

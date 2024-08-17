@@ -248,6 +248,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0aa5ddc77c7b9f498019f0f3fd94536, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sr: {fileID: 5262921746463362819}
+  destroyableConfigs: {fileID: 4602904360086170097}
 --- !u!1 &7471043401405374195
 GameObject:
   m_ObjectHideFlags: 0

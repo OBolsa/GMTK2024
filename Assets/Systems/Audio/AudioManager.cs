@@ -22,7 +22,7 @@ public class AudioManager : MonoBehaviour
     private void Start()
     {
         musics = transform.Find("Musics").GetComponentsInChildren<AudioSource>();
-        sfxs = transform.Find("Sfxs").GetComponentsInChildren<AudioSource>();
+        sfxs = transform.Find("SFXs").GetComponentsInChildren<AudioSource>();
         ambiences = transform.Find("Ambiences").GetComponentsInChildren<AudioSource>();
         mainMusic = musics[0];
 

@@ -10,10 +10,18 @@ public class AudioManager : MonoBehaviour
 
 
     private AudioSource[] musics;
-    private AudioSource[] sfxs;
+    private AudioSource[] SFXs;
+    private AudioSource[] playerSFXs;
     private AudioSource[] ambiences;
 
     private AudioSource mainMusic;
+
+
+
+
+    private bool isSteping = false;
+
+
     private void Awake()
     {
         if (instance == null) instance = this;
@@ -22,7 +30,8 @@ public class AudioManager : MonoBehaviour
     private void Start()
     {
         musics = transform.Find("Musics").GetComponentsInChildren<AudioSource>();
-        sfxs = transform.Find("SFXs").GetComponentsInChildren<AudioSource>();
+        SFXs = transform.Find("SFXs").GetComponentsInChildren<AudioSource>();
+        playerSFXs = transform.Find("PlayerSFXs").GetComponentsInChildren<AudioSource>();
         ambiences = transform.Find("Ambiences").GetComponentsInChildren<AudioSource>();
         mainMusic = musics[0];
 
@@ -43,7 +52,8 @@ public class AudioManager : MonoBehaviour
     {
 
         SetAudioPitch(musics, pitch);
-        SetAudioPitch(sfxs, pitch);
+        SetAudioPitch(SFXs, pitch);
+        SetAudioPitch(playerSFXs, pitch);
         SetAudioPitch(ambiences, pitch);
     
     }
@@ -66,7 +76,11 @@ public class AudioManager : MonoBehaviour
 
         switch (sfx) 
         {
-            default: sfxs[0].Play();
+            case global::SFXs.SMASH_BUMP: SFXs[0].Play(); break;
+
+
+            default:
+                SFXs[0].Play();
                 break;
         
         
@@ -74,11 +88,26 @@ public class AudioManager : MonoBehaviour
 
     }
 
+    public void SetPlayerSteps(bool onOFF) 
+    {
+
+        if (onOFF && !isSteping) 
+        {
+            playerSFXs[0].Play();
+            isSteping = true;
+        }
+    
+        else if (!onOFF) 
+        {
+            playerSFXs[0].Stop();
+            isSteping = false;
+        }
+    
+    }
 
 }
 public enum SFXs 
 {
     
-
-
+    SMASH_BUMP
 }

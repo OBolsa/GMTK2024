@@ -22,10 +22,12 @@ public class PlayerMovement : MonoBehaviour
         {
             PlayerAnimation.instance.PlayWalkAnimation(desiredDirection);
             rb.velocity = desiredDirection.normalized * movementSpeed;
+            AudioManager.instance.SetPlayerSteps(true);
         }
         else
         {
             PlayerAnimation.instance.GoIntoIdle();
+            AudioManager.instance.SetPlayerSteps(false);
             rb.velocity = Vector2.zero;
 
         }

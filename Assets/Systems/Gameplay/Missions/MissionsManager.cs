@@ -61,7 +61,7 @@ public class MissionsManager : MonoBehaviour
     public void GameOver() 
     {
         Debug.Log("GAME OVER!!!!");
-        Time.timeScale = 0.5f;
+       // Time.timeScale = 0.5f;
         
     }
 }

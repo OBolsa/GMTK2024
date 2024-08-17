@@ -40,12 +40,18 @@ public class DestroyableObject : MonoBehaviour, IInteractable
         {
             currentHealth -= 1;
             lifeGauge.fillAmount = (float)(currentHealth / maxHealth);
-            Debug.Log("Interacting, currentLife:" + currentHealth);
             if (myParticles != null) myParticles.PlayVFX();
             AudioManager.instance.PlaySfx(SFXs.SMASH_BUMP);
+        InstantMessageHandler.instance.ShowMessage("Broke the box! ");
 
             if (currentHealth <= 0) Die();
         }
+    }
+
+    public void DestroySFX() 
+    {
+        AudioManager.instance.PlaySfx(SFXs.BOX_CRASH);
+    
     }
 
     private void Die()

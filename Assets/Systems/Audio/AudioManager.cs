@@ -76,7 +76,9 @@ public class AudioManager : MonoBehaviour
 
         switch (sfx) 
         {
-            case global::SFXs.SMASH_BUMP: SFXs[0].Play(); break;
+            case global::SFXs.SMASH_BUMP: RandomizePitchAndPlay(SFXs[0]); break;
+            
+            case global::SFXs.BOX_CRASH: RandomizePitchAndPlay(SFXs[1]); break;
 
 
             default:
@@ -87,6 +89,15 @@ public class AudioManager : MonoBehaviour
         }
 
     }
+
+
+    void RandomizePitchAndPlay( AudioSource sfx) 
+    {
+        float randomPitch = Random.Range(0.8f,1.2f);
+        sfx.pitch = randomPitch;
+        sfx.Play();
+    }
+
 
     public void SetPlayerSteps(bool onOFF) 
     {
@@ -109,5 +120,6 @@ public class AudioManager : MonoBehaviour
 public enum SFXs 
 {
     
-    SMASH_BUMP
+    SMASH_BUMP,
+    BOX_CRASH
 }

@@ -1,12 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
-interface IInteractable
-{
-    public void Interact();
-
-}
 
 public class PlayerInteractor : MonoBehaviour
 {
@@ -23,8 +15,8 @@ public class PlayerInteractor : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-        if(collision.gameObject.TryGetComponent(out IInteractable interactableObj)) 
+
+        if (collision.gameObject.TryGetComponent(out IInteractable interactableObj))
         {
             interactableObject = interactableObj;
 

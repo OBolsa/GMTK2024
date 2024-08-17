@@ -84,9 +84,20 @@ public class LevelManager : MonoBehaviour
     private SpawnArea GetRandomAreaItem(ItemInfo item)
     {
         List<SpawnArea> results = areas.Where(area => area.spawnItem == item).ToList();
+
+        if (results.Count == 0)
+            return null;
+
         return GetRandomArea(results);
     }
-    private SpawnArea GetRandomArea(List<SpawnArea> list) => list[UnityEngine.Random.Range(0, areas.Count - 1)];
+
+    private SpawnArea GetRandomArea(List<SpawnArea> list)
+    {
+        if (list.Count == 0)
+            return null;
+
+        return list[UnityEngine.Random.Range(0, list.Count)];
+    }
 }
 
 public class SpawnInfo

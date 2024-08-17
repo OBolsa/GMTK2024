@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Level Spawner01
   m_EditorClassIdentifier: 
   configs:
-  - spawnAmountPerResource: 20
+  - spawnAmountPerResource: 6
     spawnItemsWithBuff: 0
-  - spawnAmountPerResource: 20
+  - spawnAmountPerResource: 6
     spawnItemsWithBuff: 1

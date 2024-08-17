@@ -20,6 +20,10 @@ public class SpawnArea : MonoBehaviour
     public void SpawnItem()
     {
         ResourceSpot spot = GetSpawnTransform();
+
+        if (spot == null)
+            return;
+
         spot.SetSpot(spawnItem);
         spot.gameObject.SetActive(true);
     }
@@ -28,9 +32,13 @@ public class SpawnArea : MonoBehaviour
     {
         List<ResourceSpot> possiblePositions = areaDelimiters.Where(point => !point.gameObject.activeSelf).ToList();
 
+        if (possiblePositions.Count == 0)
+            return null;
+
         int random = Random.Range(0, possiblePositions.Count);
         return possiblePositions[random];
     }
+
 
     private void OnValidate()
     {

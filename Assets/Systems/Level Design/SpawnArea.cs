@@ -4,35 +4,47 @@ using UnityEngine;
 
 public class SpawnArea : MonoBehaviour
 {
-    public ItemInfo itemToSpawn;
-    public List<Transform> areaDelimiters = new List<Transform>();
+    public ItemInfo spawnItem;
+    private List<ResourceSpot> areaDelimiters = new List<ResourceSpot>();
 
-    private void OnEnable()
+    private void Awake()
     {
-        LevelManager.Instance.OnSpawn += SpawnItem;
+        areaDelimiters = GetComponentsInChildren<ResourceSpot>(true).ToList();
     }
 
-    private void OnDisable()
+    public void SetSpawnTransformersActive(bool active)
     {
-        LevelManager.Instance.OnSpawn -= SpawnItem;
+        areaDelimiters.ForEach(area => area.gameObject.SetActive(active));
     }
 
-    private void SpawnItem(ItemInfo item)
+    public void SpawnItem()
     {
-        foreach (Transform t in areaDelimiters)
-        {
-            t.gameObject.SetActive(false);
-        }
+        ResourceSpot spot = GetSpawnTransform();
 
-        Transform spawn = GetSpawn();
-        spawn.gameObject.SetActive(true);
+        if (spot == null)
+            return;
+
+        spot.SetSpot(spawnItem);
+        spot.gameObject.SetActive(true);
     }
 
-    private Transform GetSpawn()
+    private ResourceSpot GetSpawnTransform()
     {
-        List<Transform> possiblePositions = areaDelimiters.Where(point => !point.gameObject.activeSelf).ToList();
+        List<ResourceSpot> possiblePositions = areaDelimiters.Where(point => !point.gameObject.activeSelf).ToList();
+
+        if (possiblePositions.Count == 0)
+            return null;
 
         int random = Random.Range(0, possiblePositions.Count);
         return possiblePositions[random];
+    }
+
+
+    private void OnValidate()
+    {
+        string name = "Spawn Area";
+        if (spawnItem != null) name += $" - {spawnItem.itemName}";
+
+        this.name = name;
     }
 }

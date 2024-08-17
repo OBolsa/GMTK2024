@@ -8,11 +8,11 @@ public class ResourcesTypeTools
     [MenuItem("Tools/Level/Rename Resources Type Files")]
     private static void RenameFiles()
     {
-        ResourceType[] files = Resources.LoadAll<ResourceType>(generalPath);
+        ResourceGroup[] files = Resources.LoadAll<ResourceGroup>(generalPath);
 
         if (files.Length > 0)
         {
-            foreach (ResourceType item in files)
+            foreach (ResourceGroup item in files)
             {
                 string path = generalPath + "/" + item.name + ".asset";
 

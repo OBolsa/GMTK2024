@@ -32,9 +32,9 @@ public class JournalPanel : MonoBehaviour
     {
         missionLabel.text = mission.missionLabel;
         
+
         foreach (string goal in mission.missionGoals)
         {
-
             TextMeshProUGUI goalText = Instantiate(goalLabelPreFab, missionGoalsHolder).GetComponent<TextMeshProUGUI>();
             goalText.text = goal;
 

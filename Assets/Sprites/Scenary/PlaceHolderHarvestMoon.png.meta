@@ -1,0 +1,1145 @@
+fileFormatVersion: 2
+guid: d475143a289a8a147a903369121946e7
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PlaceHolderHarvestMoon_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 129
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a74f12d44bbff347a85981df8d249d5
+      internalID: 915995905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderHarvestMoon_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 128
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2a218e3d0c0f474fbf2a50d0fb2c502
+      internalID: 1642408874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderHarvestMoon_2
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 115
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c31a4cc66120dc94f9ab5af17b0261f1
+      internalID: 987135838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderHarvestMoon_3
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 129
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dc2416690d7dc8479e210f87fe6feb8
+      internalID: -373672822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderHarvestMoon_4
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 130
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18f1da17032ad0645b0557b05e8782c5
+      internalID: 1257866201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderHarvestMoon_5
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 116
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4f5c0ea0d3ebc04e971c1c004f315e6
+      internalID: 160936917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderHarvestMoon_6
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 115
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95dd8ca3a55cab44ca614ee699cf1e37
+      internalID: -1718949142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderHarvestMoon_7
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 106
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e1f33345e7f0564c91d62ba8441a7be
+      internalID: -1876081364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderHarvestMoon_10
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 113
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdf1c9b84472b3f40990a7d026693ec8
+      internalID: 1601583649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderHarvestMoon_11
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 114
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4486b75905dc2cd4e9f29f61ba40a80b
+      internalID: 1329080937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderHarvestMoon_13
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 100
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9844c325d72737b419fecbbdb8744c1e
+      internalID: -716334930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderHarvestMoon_15
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 82
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1af65576c7b5a014bbb0abaf06318107
+      internalID: -1178577394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderHarvestMoon_16
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 97
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b646ec9aa65b234cad49a240cf422cc
+      internalID: -672269789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderHarvestMoon_20
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 84
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa8308a531fcbbd41bc90344803d77a5
+      internalID: 2016822661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderHarvestMoon_24
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 74
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f3449d58b84df148a919f4eddd9c057
+      internalID: 96351424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderHarvestMoon_25
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 81
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e3dbabdf3ab29447832c116d6694621
+      internalID: 2118122660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderHarvestMoon_33
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 66
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49675b98fb8bc544e9358f59a02d58c8
+      internalID: 158344167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderHarvestMoon_8
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 113
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4e91d524c6a6a74c9a54715b2f500a6
+      internalID: 982092161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderHarvestMoon_9
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 98
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c29157051d77bc548b787d8c50e3a5b5
+      internalID: -1688122376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderHarvestMoon_12
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 49
+        width: 36
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2a0060468ff694478af2d2a107eb13d
+      internalID: -1908315851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderHarvestMoon_14
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 97
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a5fd627642733a48b20cf246870dbf1
+      internalID: -242525160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderHarvestMoon_17
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 49
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dca888638903cf43a0df9157536a234
+      internalID: -1239710829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderHarvestMoon_18
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 52
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf25a7601201d884facf588e3316f543
+      internalID: -652676899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderHarvestMoon_19
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 48
+        width: 47
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aa439e33bd58b3499b7ac86b0fe949a
+      internalID: -1453999360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderHarvestMoon_21
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 81
+        width: 42
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e6a12933fb938b49a7fd69701015209
+      internalID: 1317291251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderHarvestMoon_22
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 56
+        width: 56
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88c2b825f288dc645a666b89c774fef5
+      internalID: 466891610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderHarvestMoon_23
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 6
+        width: 55
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90de29e0ed60cb64f9cde44051ed524b
+      internalID: -1748328859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderHarvestMoon_26
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 81
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbdd8a77b02919248bedccc4ab588b1d
+      internalID: -1412306129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderHarvestMoon_27
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 65
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a294c73832a9074aaf8364f7473c575
+      internalID: -814086339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderHarvestMoon_28
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 51
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6ab9afd66d7dbc41b8b9359016c57b1
+      internalID: 310341703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderHarvestMoon_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c6dfef82f5520b4d86c4bb13788fadd
+      internalID: -716850702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderHarvestMoon_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dd46002dccf31c45a5de2f70a3af5b0
+      internalID: -601610200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderHarvestMoon_31
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50956e5a302b73548b9096bc02f8cbf3
+      internalID: -559124258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderHarvestMoon_32
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bad5b23c9091c74a836ed5cc6f9ad11
+      internalID: 1658962922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderHarvestMoon_34
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7e74a6c1a1f28742b9647961e35b84b
+      internalID: -171478946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderHarvestMoon_35
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d71c71cf613c6644be96150646adb99
+      internalID: -1068317285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderHarvestMoon_36
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26917ba48db4c4644a99e1ee09d96d43
+      internalID: -541661810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderHarvestMoon_37
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10473472a7dfeb84ea47da5f6a81329f
+      internalID: 1230995727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderHarvestMoon_38
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5f3c1e231f446640adbf12bdcc695dd
+      internalID: -556663326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderHarvestMoon_39
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b22f979ca408ae4db50b1ecd3b1aa08
+      internalID: 509045022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderHarvestMoon_40
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34a1735a5e2d116438af53826d1c3b04
+      internalID: -1642034843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlaceHolderHarvestMoon_41
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d834076235f5879469b53d4ff3209d43
+      internalID: 1625557706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f8e7ff80becaf93429b2f3b9c1999ea7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PlaceHolderHarvestMoon_0: 915995905
+      PlaceHolderHarvestMoon_1: 1642408874
+      PlaceHolderHarvestMoon_10: 1601583649
+      PlaceHolderHarvestMoon_11: 1329080937
+      PlaceHolderHarvestMoon_12: -1908315851
+      PlaceHolderHarvestMoon_13: -716334930
+      PlaceHolderHarvestMoon_14: -242525160
+      PlaceHolderHarvestMoon_15: -1178577394
+      PlaceHolderHarvestMoon_16: -672269789
+      PlaceHolderHarvestMoon_17: -1239710829
+      PlaceHolderHarvestMoon_18: -652676899
+      PlaceHolderHarvestMoon_19: -1453999360
+      PlaceHolderHarvestMoon_2: 987135838
+      PlaceHolderHarvestMoon_20: 2016822661
+      PlaceHolderHarvestMoon_21: 1317291251
+      PlaceHolderHarvestMoon_22: 466891610
+      PlaceHolderHarvestMoon_23: -1748328859
+      PlaceHolderHarvestMoon_24: 96351424
+      PlaceHolderHarvestMoon_25: 2118122660
+      PlaceHolderHarvestMoon_26: -1412306129
+      PlaceHolderHarvestMoon_27: -814086339
+      PlaceHolderHarvestMoon_28: 310341703
+      PlaceHolderHarvestMoon_29: -716850702
+      PlaceHolderHarvestMoon_3: -373672822
+      PlaceHolderHarvestMoon_30: -601610200
+      PlaceHolderHarvestMoon_31: -559124258
+      PlaceHolderHarvestMoon_32: 1658962922
+      PlaceHolderHarvestMoon_33: 158344167
+      PlaceHolderHarvestMoon_34: -171478946
+      PlaceHolderHarvestMoon_35: -1068317285
+      PlaceHolderHarvestMoon_36: -541661810
+      PlaceHolderHarvestMoon_37: 1230995727
+      PlaceHolderHarvestMoon_38: -556663326
+      PlaceHolderHarvestMoon_39: 509045022
+      PlaceHolderHarvestMoon_4: 1257866201
+      PlaceHolderHarvestMoon_40: -1642034843
+      PlaceHolderHarvestMoon_41: 1625557706
+      PlaceHolderHarvestMoon_42: -804593293
+      PlaceHolderHarvestMoon_43: -2095088424
+      PlaceHolderHarvestMoon_44: -534904723
+      PlaceHolderHarvestMoon_45: 701803250
+      PlaceHolderHarvestMoon_46: -2128053483
+      PlaceHolderHarvestMoon_47: -546782802
+      PlaceHolderHarvestMoon_48: -131195059
+      PlaceHolderHarvestMoon_49: 2064666700
+      PlaceHolderHarvestMoon_5: 160936917
+      PlaceHolderHarvestMoon_50: 666622734
+      PlaceHolderHarvestMoon_51: -1538893528
+      PlaceHolderHarvestMoon_52: -705057783
+      PlaceHolderHarvestMoon_53: -388064833
+      PlaceHolderHarvestMoon_54: 605260024
+      PlaceHolderHarvestMoon_55: -1572330431
+      PlaceHolderHarvestMoon_56: -940886225
+      PlaceHolderHarvestMoon_57: 1139271709
+      PlaceHolderHarvestMoon_58: 1936064566
+      PlaceHolderHarvestMoon_59: 1886741326
+      PlaceHolderHarvestMoon_6: -1718949142
+      PlaceHolderHarvestMoon_60: -1966180575
+      PlaceHolderHarvestMoon_61: -1322449163
+      PlaceHolderHarvestMoon_62: -71773717
+      PlaceHolderHarvestMoon_63: -1202406718
+      PlaceHolderHarvestMoon_64: -1908408506
+      PlaceHolderHarvestMoon_65: -1104944891
+      PlaceHolderHarvestMoon_66: 1757829833
+      PlaceHolderHarvestMoon_67: -1535567606
+      PlaceHolderHarvestMoon_68: -465804730
+      PlaceHolderHarvestMoon_69: -1373514505
+      PlaceHolderHarvestMoon_7: -1876081364
+      PlaceHolderHarvestMoon_70: -494939507
+      PlaceHolderHarvestMoon_71: -1324322894
+      PlaceHolderHarvestMoon_72: -458776633
+      PlaceHolderHarvestMoon_73: 549539050
+      PlaceHolderHarvestMoon_74: 1680516981
+      PlaceHolderHarvestMoon_75: -947355492
+      PlaceHolderHarvestMoon_76: 1130877563
+      PlaceHolderHarvestMoon_77: -702443409
+      PlaceHolderHarvestMoon_78: -58565511
+      PlaceHolderHarvestMoon_79: 2094750760
+      PlaceHolderHarvestMoon_8: 982092161
+      PlaceHolderHarvestMoon_80: 116842361
+      PlaceHolderHarvestMoon_81: 611640591
+      PlaceHolderHarvestMoon_82: -848967548
+      PlaceHolderHarvestMoon_83: 628112371
+      PlaceHolderHarvestMoon_84: 630138573
+      PlaceHolderHarvestMoon_85: -1435758780
+      PlaceHolderHarvestMoon_86: -1214170661
+      PlaceHolderHarvestMoon_87: 1567560318
+      PlaceHolderHarvestMoon_88: -999032731
+      PlaceHolderHarvestMoon_89: 1734241580
+      PlaceHolderHarvestMoon_9: -1688122376
+      PlaceHolderHarvestMoon_90: -1167866477
+      PlaceHolderHarvestMoon_91: -923238248
+      PlaceHolderHarvestMoon_92: -646852806
+      PlaceHolderHarvestMoon_93: -635584910
+      PlaceHolderHarvestMoon_94: -442681596
+      PlaceHolderHarvestMoon_95: -1001306854
+      PlaceHolderHarvestMoon_96: -1525025428
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

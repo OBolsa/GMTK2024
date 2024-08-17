@@ -7,6 +7,7 @@ public class ItemInfo : ScriptableObject
     public string itemName;
     public string itemDescription;
     public Sprite itemSprite;
+    public List<BuffType> itemBuffs;
     public List<ItemInfo> itemRequirements;
 
     public bool HaveRequisitions(List<ItemInfo> items)
@@ -28,3 +29,5 @@ public class ItemInfo : ScriptableObject
         return true;
     }
 }
+
+public enum BuffType { None, Yellow, Red, Blue }

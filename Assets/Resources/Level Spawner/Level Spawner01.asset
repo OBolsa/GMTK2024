@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bc37f7b9a4ac6e498a4bf1101c858dc, type: 3}
   m_Name: Level Spawner01
   m_EditorClassIdentifier: 
-  totemsLevel:
-  - types:
-    - type: {fileID: 11400000, guid: 30c0b365255d4474e924255af4ca4ab6, type: 2}
-      minSpawn: 1
-      maxSpawn: 5
-  - types: []
+  configs:
+  - spawnAmountPerResource: 20
+    spawnItemsWithBuff: 0
+  - spawnAmountPerResource: 20
+    spawnItemsWithBuff: 1

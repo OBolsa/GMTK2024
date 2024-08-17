@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Pedra Azul
   itemDescription: 
-  itemSprite: {fileID: 0}
+  itemSprite: {fileID: 509045022, guid: d475143a289a8a147a903369121946e7, type: 3}
+  itemBuffs: 03000000
   itemRequirements: []

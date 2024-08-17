@@ -1,10 +1,26 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "SO/Inventory")]
 public class PlayerInventorySO : ScriptableObject
 {
     public List<ItemInfo> itemInventory;
+    public List<TotemItemInfo> totemInventory = new List<TotemItemInfo>();
+
+    private void OnEnable()
+    {
+        itemInventory.Clear();
+        totemInventory.Clear();
+    }
+
+    public bool HaveItem(ItemInfo item) => itemInventory.Contains(item);
+    public bool HaveAnyItemsOfItemGroup(ResourceGroup group)
+    {
+        List<ItemInfo> itemsInGroup = new List<ItemInfo>(group.items);
+
+        return itemsInGroup.Any(itemsInGroup => itemInventory.Contains(itemsInGroup));
+    }
 
     public void AddItemToInventory(ItemInfo item)
     {
@@ -36,5 +52,10 @@ public class PlayerInventorySO : ScriptableObject
         }
 
         return items;
+    }
+
+    public ItemInfo FindFirstMatchingItem(List<ItemInfo> listA, List<ItemInfo> listB)
+    {
+        return listA.FirstOrDefault(itemA => listB.Contains(itemA));
     }
 }

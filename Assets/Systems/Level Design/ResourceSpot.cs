@@ -2,15 +2,9 @@ using UnityEngine;
 
 public class ResourceSpot : MonoBehaviour
 {
-    private SpriteRenderer sr;
-    private DestroyableObject destroyableConfigs;
+    public SpriteRenderer sr;
+    public DestroyableObject destroyableConfigs;
     private ItemInfo resourceItem;
-
-    private void Awake()
-    {
-        sr = GetComponent<SpriteRenderer>();
-        destroyableConfigs = GetComponent<DestroyableObject>();
-    }
 
     public void SetSpot(ItemInfo item)
     {

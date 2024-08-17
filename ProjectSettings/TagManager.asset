@@ -41,3 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Ground
+    uniqueID: 1863503567
+    locked: 0
+  - name: GamePlay
+    uniqueID: 3297604235
+    locked: 0
+  - name: UI
+    uniqueID: 3049009567
+    locked: 0

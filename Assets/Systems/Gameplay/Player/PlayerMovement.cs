@@ -27,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
         {
             PlayerAnimation.instance.GoIntoIdle();
             rb.velocity = Vector2.zero;
+
         }
     }
 }

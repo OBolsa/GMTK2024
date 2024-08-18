@@ -41,6 +41,7 @@ public class WorkBench : MonoBehaviour, IInteractable
 
             canInteract = false;
             renderer.color = Color.black;
+            LevelManager.Instance.TotemPartDone?.Invoke(totemItem);
         }
         else
         {

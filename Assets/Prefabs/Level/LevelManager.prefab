@@ -50,7 +50,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: {fileID: 11400000, guid: bf2deb9cb587516408fbedb1a1c29171, type: 2}
   timer: {fileID: 6018863516343398398}
-  balance: {fileID: 11400000, guid: aa82869b5c15b564f98b165343620c98, type: 2}
+  attributes: {fileID: 11400000, guid: aa82869b5c15b564f98b165343620c98, type: 2}
   totems: 0
   areas: []
   workBench: []
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedResources: -1
-  averageDistancePerSelection: 34.267456
+  averageDistancePerSelection: 34.26746
 --- !u!114 &6018863516343398398
 MonoBehaviour:
   m_ObjectHideFlags: 0

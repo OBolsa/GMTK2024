@@ -15,4 +15,10 @@ public class GameBalanceAttributes : ScriptableObject
     public float speedIncreasePerBuff;
     public float damageIncreasePerBuff;
     public float timeIncreasePerBuff;
+
+    private float playerDamage;
+
+    public float GetPlayerDamage() => playerDamage;
+    public float SetPlayerDamage(float newDamage) => playerDamage = newDamage;
+
 }

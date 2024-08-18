@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8117195378066490633}
   - component: {fileID: 3900816864094305800}
   - component: {fileID: 9135020147314589296}
+  - component: {fileID: 6018863516343398398}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -48,6 +49,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: {fileID: 11400000, guid: bf2deb9cb587516408fbedb1a1c29171, type: 2}
+  timer: {fileID: 6018863516343398398}
+  balance: {fileID: 11400000, guid: aa82869b5c15b564f98b165343620c98, type: 2}
   totems: 0
   areas: []
   workBench: []
@@ -94,5 +97,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 904f512da709ac140af29ef2e6120ce5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedResources: 0
-  averageDistancePerSelection: 0
+  selectedResources: -1
+  averageDistancePerSelection: 34.267456
+--- !u!114 &6018863516343398398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308350244004739101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4788f60946184e64ea178bcb53e58571, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxTime: 0

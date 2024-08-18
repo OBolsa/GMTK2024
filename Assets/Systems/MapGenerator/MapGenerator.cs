@@ -7,7 +7,7 @@ public class MapGenerator : MonoBehaviour
     [SerializeField] private Texture2D textureMap;
     [SerializeField] private Tilemap tilemap;
     [SerializeField] private TileBase tileToPaint;
-
+    [SerializeField] private Color colorRef;
     [SerializeField] private List<MapPainterTile> mapPainterTiles;
 
     [ContextMenu("Setup Tile")]
@@ -26,14 +26,11 @@ public class MapGenerator : MonoBehaviour
                 Color pixel = textureMap.GetPixel(x, y);
                 Vector3Int position = new Vector3Int(x - widthOffset, y - heightOffset, 0);
 
-                if (pixel == Color.black)
+                if (pixel == colorRef)
                 {
                     tilemap.SetTile(position, tileToPaint);
                 }
-                else
-                {
-                    tilemap.SetTile(position, null);
-                }
+                
             }
         }
     }

@@ -13,27 +13,30 @@ MonoBehaviour:
   m_Name: Level Spawner02
   m_EditorClassIdentifier: 
   configs:
-  - spawnAmountPerResource: 6
+  - spawnAmountPerResource: 30
+    spawnItemsWithBuff: 0
+    buildTimerInSeconds: 144
+  - spawnAmountPerResource: 25
+    spawnItemsWithBuff: 0
+    buildTimerInSeconds: 100
+  - spawnAmountPerResource: 20
     spawnItemsWithBuff: 1
-    buildTimerInSeconds: 70
-  - spawnAmountPerResource: 6
-    spawnItemsWithBuff: 1
-    buildTimerInSeconds: 60
-  - spawnAmountPerResource: 6
-    spawnItemsWithBuff: 1
-    buildTimerInSeconds: 75
+    buildTimerInSeconds: 74
   - spawnAmountPerResource: 12
     spawnItemsWithBuff: 1
-    buildTimerInSeconds: 70
-  - spawnAmountPerResource: 12
+    buildTimerInSeconds: 80
+  - spawnAmountPerResource: 9
     spawnItemsWithBuff: 1
-    buildTimerInSeconds: 70
-  - spawnAmountPerResource: 12
+    buildTimerInSeconds: 92
+  - spawnAmountPerResource: 4
     spawnItemsWithBuff: 1
-    buildTimerInSeconds: 70
-  - spawnAmountPerResource: 12
+    buildTimerInSeconds: 101
+  - spawnAmountPerResource: 2
     spawnItemsWithBuff: 1
-    buildTimerInSeconds: 65
+    buildTimerInSeconds: 145
+  - spawnAmountPerResource: 700000
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 100000
   - spawnAmountPerResource: 12
     spawnItemsWithBuff: 1
     buildTimerInSeconds: 65
@@ -47,6 +50,21 @@ MonoBehaviour:
     spawnItemsWithBuff: 1
     buildTimerInSeconds: 60
   - spawnAmountPerResource: 5
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 60
+  - spawnAmountPerResource: 4
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 60
+  - spawnAmountPerResource: 4
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 60
+  - spawnAmountPerResource: 4
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 60
+  - spawnAmountPerResource: 4
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 60
+  - spawnAmountPerResource: 4
     spawnItemsWithBuff: 1
     buildTimerInSeconds: 60
   - spawnAmountPerResource: 4

@@ -15,5 +15,6 @@ MonoBehaviour:
   itemName: Pedra Azul
   itemDescription: 
   itemSprite: {fileID: 509045022, guid: d475143a289a8a147a903369121946e7, type: 3}
+  itemSfx: {fileID: 8300000, guid: 4c875c429d9d06242b52a7e7522abbc2, type: 3}
   itemBuffs: 03000000
   itemLife: 6

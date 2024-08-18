@@ -11,10 +11,9 @@ public class DestroyableObject : MonoBehaviour, IInteractable
     private float currentHealth;
 
     public UnityEvent OnDestroy;
+    private ParticleHandler myParticles;
 
-    public ParticleSystem PfxHit;
-    public ParticleSystem PfxDeath;
-
+    AudioClip hitSfx;
 
 
     private void OnEnable()
@@ -26,14 +25,16 @@ public class DestroyableObject : MonoBehaviour, IInteractable
     {
         currentHealth = maxHealth;
         lifeGauge = transform.Find("WorldCanvas").Find("LifeGauge").GetComponent<Image>();
-
+        myParticles = GetComponent<ParticleHandler>();
     }
 
-    public void SetupDestroyable(int currentHealth, int maxHealth)
+    public void SetupDestroyable(ItemInfo item)
     {
         if(lifeGauge != null) lifeGauge.fillAmount = 1;
-        this.currentHealth = currentHealth;
-        this.maxHealth = maxHealth;
+        this.maxHealth = item.itemLife;
+        this.currentHealth = this.maxHealth;
+        this.hitSfx = item.itemSfx;
+        Debug.Log(hitSfx);
     }
 
     public void Interact()
@@ -47,9 +48,8 @@ public class DestroyableObject : MonoBehaviour, IInteractable
         {
             currentHealth -= 1;
             lifeGauge.fillAmount = (float)(currentHealth / maxHealth);
-            PfxHit.Play();
-            AudioManager.instance.PlaySfx(SFXs.SMASH_BUMP);
-            InstantMessageHandler.instance.ShowMessage("Broke the box! ");
+            if (myParticles != null) myParticles.PlayVFX();
+            AudioManager.instance.PlaySfx(hitSfx);
 
             if (currentHealth <= 0) Die();
         }
@@ -57,13 +57,13 @@ public class DestroyableObject : MonoBehaviour, IInteractable
 
     public void DestroySFX()
     {
+        InstantMessageHandler.instance.ShowMessage("Got plus 1 resources! ");
         AudioManager.instance.PlaySfx(SFXs.BOX_CRASH);
 
     }
 
     private void Die()
     {
-        Instantiate(PfxDeath,transform.position, Quaternion.identity);
-        OnDestroy?.Invoke();
+       OnDestroy?.Invoke();
     }
 }

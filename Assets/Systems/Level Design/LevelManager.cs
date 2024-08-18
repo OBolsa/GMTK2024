@@ -6,6 +6,8 @@ public class LevelManager : MonoBehaviour
 {
     public static LevelManager Instance;
     public LevelSpawner level;
+    public LevelTimer timer;
+    public GameBalanceAttributes balance;
     public int totems;
     public List<SpawnArea> areas = new List<SpawnArea>();
     public List<WorkBench> workBench = new List<WorkBench>();
@@ -31,6 +33,7 @@ public class LevelManager : MonoBehaviour
     private void Start()
     {
         PopulateItems();
+        timer.StartCount(level.configs[totems].buildTimerInSeconds);
     }
 
     public void PlaceTotem()
@@ -38,6 +41,7 @@ public class LevelManager : MonoBehaviour
         totems++;
         workBench.ForEach(bench => bench.RestartBench());
         PopulateItems();
+        timer.StartCount(level.configs[totems].buildTimerInSeconds);
     }
 
     [ContextMenu("Populate")]

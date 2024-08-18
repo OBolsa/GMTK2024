@@ -37,9 +37,13 @@ public class Totem : MonoBehaviour, IInteractable
 
             inventory.CleanTotemItemInfoList();
             LevelManager.Instance.PlaceTotem();
+
+
+
         }
         else
         {
+            InstantMessageHandler.instance.ShowMessage("Don't have all 3 toten parts");
             Debug.Log("Não tem todas as partes");
         }
     }

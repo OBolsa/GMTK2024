@@ -16,6 +16,9 @@ public class MissionsManager : MonoBehaviour
 
 
     private JournalPanel journalPanel;
+    private DialoguePanel dialoguePanel;
+    
+    
     private void Awake()
     {
         if (instance == null) instance = this;
@@ -25,6 +28,7 @@ public class MissionsManager : MonoBehaviour
     {
 
         journalPanel = FindObjectOfType<JournalPanel>();
+        dialoguePanel = FindObjectOfType<DialoguePanel>();
         SetCurrentMissionOnJournal();
 
     }
@@ -39,6 +43,8 @@ public class MissionsManager : MonoBehaviour
     private void SetCurrentMissionOnJournal() 
     {
         journalPanel.SetCurrentMission(missions[currentMission]);
+        dialoguePanel.ShowMessage(missions[currentMission].missionLabel);
+
         
     }
 

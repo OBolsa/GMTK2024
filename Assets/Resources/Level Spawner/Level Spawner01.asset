@@ -13,12 +13,66 @@ MonoBehaviour:
   m_Name: Level Spawner01
   m_EditorClassIdentifier: 
   configs:
-  - spawnAmountPerResource: 3
+  - spawnAmountPerResource: 15
     spawnItemsWithBuff: 0
-    timeToBuildTotem: 10
-  - spawnAmountPerResource: 3
+    buildTimerInSeconds: 180
+  - spawnAmountPerResource: 12
+    spawnItemsWithBuff: 0
+    buildTimerInSeconds: 170
+  - spawnAmountPerResource: 10
+    spawnItemsWithBuff: 0
+    buildTimerInSeconds: 160
+  - spawnAmountPerResource: 15
     spawnItemsWithBuff: 1
-    timeToBuildTotem: 8
-  - spawnAmountPerResource: 3
+    buildTimerInSeconds: 150
+  - spawnAmountPerResource: 10
     spawnItemsWithBuff: 1
-    timeToBuildTotem: 7
+    buildTimerInSeconds: 140
+  - spawnAmountPerResource: 10
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 120
+  - spawnAmountPerResource: 10
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 105
+  - spawnAmountPerResource: 8
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 90
+  - spawnAmountPerResource: 8
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 80
+  - spawnAmountPerResource: 8
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 75
+  - spawnAmountPerResource: 7
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 70
+  - spawnAmountPerResource: 7
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 70
+  - spawnAmountPerResource: 7
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 70
+  - spawnAmountPerResource: 6
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 65
+  - spawnAmountPerResource: 6
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 65
+  - spawnAmountPerResource: 6
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 65
+  - spawnAmountPerResource: 5
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 60
+  - spawnAmountPerResource: 5
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 60
+  - spawnAmountPerResource: 5
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 60
+  - spawnAmountPerResource: 4
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 60
+  - spawnAmountPerResource: 4
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 60

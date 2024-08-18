@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -7,11 +8,17 @@ public class LevelManager : MonoBehaviour
     public static LevelManager Instance;
     public LevelSpawner level;
     public LevelTimer timer;
-    public GameBalanceAttributes balance;
+    public GameBalanceAttributes attributes;
     public int totems;
     public List<SpawnArea> areas = new List<SpawnArea>();
     public List<WorkBench> workBench = new List<WorkBench>();
     private ResourceGroup[] itemGroups;
+
+    public Action<int> LevelStarted;
+    public Action TotemPlaced;
+    public Action<int> LevelFailed;
+    public Action<TotemItemInfo> TotemPartDone;
+    public Action<ItemInfo> ItemCollected;
 
     private void Awake()
     {
@@ -30,18 +37,45 @@ public class LevelManager : MonoBehaviour
         workBench = FindObjectsOfType<WorkBench>().ToList();
     }
 
+    private void OnEnable()
+    {
+        TotemPartDone += UpdatePlayerDamage;
+    }
+
+    private void OnDisable()
+    {
+        TotemPartDone -= UpdatePlayerDamage;
+    }
+
     private void Start()
     {
         PopulateItems();
-        timer.StartCount(level.configs[totems].buildTimerInSeconds);
     }
 
     public void PlaceTotem()
     {
         totems++;
         workBench.ForEach(bench => bench.RestartBench());
+        TotemPlaced?.Invoke();
         PopulateItems();
-        timer.StartCount(level.configs[totems].buildTimerInSeconds);
+    }
+
+    private void UpdatePlayerDamage(TotemItemInfo totemInfo)
+    {
+        List<BuffType> totemBuffs = new List<BuffType>(totemInfo.totemItemBuffs);
+
+        foreach (var buff in totemBuffs)
+        {
+            if (buff == BuffType.Red)
+            {
+                attributes.SetPlayerDamage(attributes.GetPlayerDamage() + attributes.damageIncreasePerBuff);
+            }
+        }
+    }
+
+    public void Fail()
+    {
+        LevelFailed?.Invoke(totems);
     }
 
     [ContextMenu("Populate")]
@@ -75,6 +109,9 @@ public class LevelManager : MonoBehaviour
             area.SpawnItem();
             itemsToSpawn.Remove(itemsToSpawn[0]);
         }
+
+        LevelStarted?.Invoke(totems);
+        timer.StartCount(level.configs[totems].buildTimerInSeconds);
     }
 
     private List<ItemInfo> GetItemsToSpawn(ResourceGroup group, int amount, bool spawnItemsWithBuff)
@@ -116,10 +153,4 @@ public class LevelManager : MonoBehaviour
 
         return list[UnityEngine.Random.Range(0, list.Count)];
     }
-}
-
-public class SpawnInfo
-{
-    public ItemInfo item;
-    public Color type;
 }

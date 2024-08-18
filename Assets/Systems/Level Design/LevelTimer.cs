@@ -1,10 +1,12 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class LevelTimer : MonoBehaviour
 {
     public float maxTime;
     private float currentTime;
+    private float extraTime;
     bool isCounting;
 
     private void Update()
@@ -12,6 +14,19 @@ public class LevelTimer : MonoBehaviour
         if (isCounting)
         {
             Count();
+        }
+    }
+
+    private void UpdateExtraTime(TotemItemInfo totemInfo)
+    {
+        List<BuffType> totemBuffs = new List<BuffType>(totemInfo.totemItemBuffs);
+
+        foreach (var buff in totemBuffs)
+        {
+            if (buff == BuffType.Yellow)
+            {
+                extraTime += LevelManager.Instance.attributes.timeIncreasePerBuff;
+            }
         }
     }
 
@@ -29,6 +44,7 @@ public class LevelTimer : MonoBehaviour
         if (currentTime < 0)
         {
             isCounting = false;
+            LevelManager.Instance.Fail();
             Debug.Log("PERDEU PLAYBOY");
         }
     }

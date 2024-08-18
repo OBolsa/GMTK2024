@@ -8,7 +8,13 @@ public class LevelTimer : MonoBehaviour
     private float currentTime;
     private float extraTime;
     bool isCounting;
+    MissionsManager mission;
 
+
+    private void Start()
+    {
+        mission = MissionsManager.instance;
+    }
     private void Update()
     {
         if (isCounting)
@@ -33,6 +39,7 @@ public class LevelTimer : MonoBehaviour
     public void StartCount(float time)
     {
         maxTime = time;
+        MissionsManager.instance.SetTime(maxTime);
         currentTime = maxTime;
         isCounting = true;
     }
@@ -40,11 +47,14 @@ public class LevelTimer : MonoBehaviour
     private void Count()
     {
         currentTime -= Time.deltaTime;
+        mission.UpdateTimerOnUI(currentTime);
+
 
         if (currentTime < 0)
         {
             isCounting = false;
             LevelManager.Instance.Fail();
+            InstantMessageHandler.instance.ShowMessage("PERDEU PLAYBOY");
             Debug.Log("PERDEU PLAYBOY");
         }
     }

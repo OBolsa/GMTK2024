@@ -41,9 +41,11 @@ public class InventoryUI : MonoBehaviour
 
     public void RemoveItem(ItemInfo item) 
     {
-        bool hasRemoved = false;
+       
 
         ItemLabel labelToRemove = allItemsLabel.Find(label => label.GetItemInfo() == item);
+       
+        
         if(labelToRemove != null) 
         {
             labelToRemove.Erase();
@@ -58,18 +60,14 @@ public class InventoryUI : MonoBehaviour
 
     public void CleanInventory()
     {
-       foreach(ItemLabel label in allItemsLabel) 
-       {
-            if(label != null)
-            {
-
-                label.Erase();
-                allItemsLabel.Remove(label);
-            }
-            
-
-       }
+        for( int i = 0; i < allItemsLabel.Count; i++) 
+        {
+            allItemsLabel[i].Erase();
         
+        }
+
+        allItemsLabel.Clear();
+
     }
 
 

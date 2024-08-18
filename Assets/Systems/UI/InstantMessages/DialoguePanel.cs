@@ -5,15 +5,16 @@ using TMPro;
 
 public class DialoguePanel : MonoBehaviour
 {
-
+    public static DialoguePanel instance;
     
     TMP_Text dialogueTMP;
 
 
-    private void Awake()
+    private void Start()
     {
+        if (instance == null) instance = this;
         dialogueTMP = transform.Find("DialogueTMP").GetComponent<TMP_Text>();
-        dialogueTMP.gameObject.SetActive(false);
+        this.gameObject.SetActive(false);
         
     }
 
@@ -29,7 +30,7 @@ public class DialoguePanel : MonoBehaviour
 
     IEnumerator WriteMessage(string text) 
     {
-        dialogueTMP.gameObject.SetActive(true);
+     
 
         dialogueTMP.text = "    ";
         foreach(char c in text.ToCharArray()) 
@@ -43,7 +44,7 @@ public class DialoguePanel : MonoBehaviour
 
             yield return new WaitForSeconds(1f);
 
-        dialogueTMP.gameObject.SetActive(false);
+        this.gameObject.SetActive(false);
             
     
     }

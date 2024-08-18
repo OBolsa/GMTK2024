@@ -43,7 +43,8 @@ public class MissionsManager : MonoBehaviour
     private void SetCurrentMissionOnJournal() 
     {
         journalPanel.SetCurrentMission(missions[currentMission]);
-        dialoguePanel.ShowMessage(missions[currentMission].missionLabel);
+        DialoguePanel.instance.gameObject.SetActive(true);
+        DialoguePanel.instance.ShowMessage(missions[currentMission].missionLabel);
 
         
     }

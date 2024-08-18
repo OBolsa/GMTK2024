@@ -12,6 +12,12 @@ public class DestroyableObject : MonoBehaviour, IInteractable
 
     public UnityEvent OnDestroy;
     private ParticleHander myParticles;
+    [SerializeField]
+    private Animator ResourceAnimator;
+    [SerializeField]
+    private ParticleSystem PfxHit;
+    [SerializeField]
+    private ParticleSystem PfxDeath;
 
     private void OnEnable()
     {
@@ -45,7 +51,8 @@ public class DestroyableObject : MonoBehaviour, IInteractable
             if (myParticles != null) myParticles.PlayVFX();
             AudioManager.instance.PlaySfx(SFXs.SMASH_BUMP);
             InstantMessageHandler.instance.ShowMessage("Broke the box! ");
-
+            PfxHit.Play();
+            ResourceAnimator.SetTrigger("hit");
             if (currentHealth <= 0) Die();
         }
     }
@@ -58,6 +65,8 @@ public class DestroyableObject : MonoBehaviour, IInteractable
 
     private void Die()
     {
+        PfxDeath.transform.parent = null;
+        PfxDeath.Play();
         OnDestroy?.Invoke();
     }
 }

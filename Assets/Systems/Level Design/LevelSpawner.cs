@@ -12,5 +12,5 @@ public class SpawnConfig
 {
     public int spawnAmountPerResource;
     public bool spawnItemsWithBuff;
-    public float timeToBuildTotem;
+    public float buildTimerInSeconds;
 }

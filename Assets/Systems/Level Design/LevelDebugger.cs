@@ -92,7 +92,7 @@ public class LevelDebugger : MonoBehaviour
         groupMadeira = Resources.Load<ResourceGroup>("Resources Groups/Madeira");
         groupPedra = Resources.Load<ResourceGroup>("Resources Groups/Pedra");
 
-        List<SpawnArea> areas = FindObjectsOfType<SpawnArea>(true).ToList();
+        List<SpawnArea> areas = FindObjectsOfType<SpawnArea>().ToList();
 
         List<SpawnArea> areasForGrama = areas.FindAll(a => groupGrama.items.Contains(a.spawnItem));
         List<SpawnArea> areasForMadeira = areas.FindAll(a => groupMadeira.items.Contains(a.spawnItem));

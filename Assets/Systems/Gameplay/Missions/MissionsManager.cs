@@ -13,26 +13,33 @@ public class MissionsManager : MonoBehaviour
 
 
     private int currentMission = 0;
-    float timer;
+
 
     private JournalPanel journalPanel;
-
+    private void Awake()
+    {
+        if (instance == null) instance = this;
+        
+    }
     private void Start()
     {
 
         journalPanel = FindObjectOfType<JournalPanel>();
         SetCurrentMissionOnJournal();
-        if (instance == null) instance = this;
 
     }
 
+    public void SetTime(float maxTime) 
+    {
 
+        journalPanel.missionTime = maxTime;
+    
+    }
 
     private void SetCurrentMissionOnJournal() 
     {
         journalPanel.SetCurrentMission(missions[currentMission]);
-        timer = missions[currentMission].missionTime;
-        StartCoroutine(RunTimer());
+        
     }
 
     public void SetNextMission() 
@@ -41,23 +48,11 @@ public class MissionsManager : MonoBehaviour
         if(currentMission <= missions.Length) SetCurrentMissionOnJournal();
     }
 
-    IEnumerator RunTimer() 
+
+    public void UpdateTimerOnUI(float currentTime) 
     {
-    
-        while(timer > 0) 
-        {
-
-
-            timer -= Time.deltaTime;
-            journalPanel.UpdateTimer(timer);
-            yield return null;
-        }
-
-        GameOver();
-    
-    
+        journalPanel.UpdateTimer(currentTime);
     }
-
     public void GameOver() 
     {
         Debug.Log("GAME OVER!!!!");

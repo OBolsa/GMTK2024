@@ -60,7 +60,9 @@ public class InventoryUI : MonoBehaviour
     {
        foreach(ItemLabel label in allItemsLabel) 
        {
-            Destroy(label.gameObject);
+            label.Erase();
+            allItemsLabel.Remove(label);
+            
 
        }
         

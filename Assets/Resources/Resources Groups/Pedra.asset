@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Pedra
   m_EditorClassIdentifier: 
   type: Pedra
-  baseColor: {r: 1, g: 1, b: 1, a: 1}
+  baseColor: {r: 0.23891956, g: 0.4653658, b: 0.5566038, a: 1}
   items:
   - {fileID: 11400000, guid: f027a4d9d0cb52e489b24b5118982966, type: 2}
   - {fileID: 11400000, guid: 730d637d25b3963408e8e98f87b5a982, type: 2}

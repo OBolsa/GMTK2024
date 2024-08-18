@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Grama
   m_EditorClassIdentifier: 
   type: Grama
-  baseColor: {r: 1, g: 1, b: 1, a: 1}
+  baseColor: {r: 0.017627195, g: 0.6792453, b: 0, a: 1}
   items:
   - {fileID: 11400000, guid: 5b557f34bbe2f8445a347bbc183578a0, type: 2}
   - {fileID: 11400000, guid: 40dbdeb222341c942a02329c8c7bf066, type: 2}

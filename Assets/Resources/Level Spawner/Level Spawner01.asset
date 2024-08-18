@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: Level Spawner01
   m_EditorClassIdentifier: 
   configs:
-  - spawnAmountPerResource: 6
+  - spawnAmountPerResource: 3
     spawnItemsWithBuff: 0
-  - spawnAmountPerResource: 6
+    timeToBuildTotem: 10
+  - spawnAmountPerResource: 3
     spawnItemsWithBuff: 1
-  - spawnAmountPerResource: 2
-    spawnItemsWithBuff: 0
+    timeToBuildTotem: 8
+  - spawnAmountPerResource: 3
+    spawnItemsWithBuff: 1
+    timeToBuildTotem: 7

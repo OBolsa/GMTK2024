@@ -15,7 +15,6 @@ MonoBehaviour:
   itemName: Macaco de Metal
   itemDescription: 
   itemSprite: {fileID: 0}
-  itemRequirements:
-  - {fileID: 11400000, guid: f027a4d9d0cb52e489b24b5118982966, type: 2}
-  - {fileID: 11400000, guid: f027a4d9d0cb52e489b24b5118982966, type: 2}
-  - {fileID: 11400000, guid: b02794ca47115214b833dc0f0c22cc18, type: 2}
+  itemSfx: {fileID: 8300000, guid: 4c875c429d9d06242b52a7e7522abbc2, type: 3}
+  itemBuffs: 
+  itemLife: 0

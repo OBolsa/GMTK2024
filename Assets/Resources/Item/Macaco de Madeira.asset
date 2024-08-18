@@ -15,7 +15,6 @@ MonoBehaviour:
   itemName: Macaco de Madeira
   itemDescription: 
   itemSprite: {fileID: 0}
-  itemRequirements:
-  - {fileID: 11400000, guid: cd8fd75f2e093954f85fa21a160b3bb3, type: 2}
-  - {fileID: 11400000, guid: cd8fd75f2e093954f85fa21a160b3bb3, type: 2}
-  - {fileID: 11400000, guid: cd8fd75f2e093954f85fa21a160b3bb3, type: 2}
+  itemSfx: {fileID: 8300000, guid: 0d63a43ae0ecded4391d99a4ed29989c, type: 3}
+  itemBuffs: 
+  itemLife: 0

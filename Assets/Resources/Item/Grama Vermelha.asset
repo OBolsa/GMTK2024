@@ -15,5 +15,6 @@ MonoBehaviour:
   itemName: Grama Vermelha
   itemDescription: 
   itemSprite: {fileID: -601610200, guid: d475143a289a8a147a903369121946e7, type: 3}
+  itemSfx: {fileID: 8300000, guid: 20037bd60c785a14caac9f6c0588566a, type: 3}
   itemBuffs: 02000000
   itemLife: 6

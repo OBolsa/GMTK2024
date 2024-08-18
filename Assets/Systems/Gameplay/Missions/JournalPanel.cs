@@ -16,7 +16,7 @@ public class JournalPanel : MonoBehaviour
 
     private Image timerImage;
 
-    private float missionTime = 0;
+    internal float missionTime = 0;
 
 
     private void Start()
@@ -40,9 +40,10 @@ public class JournalPanel : MonoBehaviour
 
         }
 
-        missionTime = mission.missionTime;
+       // missionTime = mission.missionTime;
 
     }
+
 
 
 

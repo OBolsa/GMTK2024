@@ -48,6 +48,7 @@ public class LevelDebugger : MonoBehaviour
         }
     }
 
+#if UNITY_EDITOR
     private void OnEnable()
     {
         SetupSpawns();
@@ -60,6 +61,29 @@ public class LevelDebugger : MonoBehaviour
     {
         averageDistancePerSelection = AverageDistance;
     }
+    private void OnDrawGizmos()
+    {
+        foreach (var spawnDebugger in spawns)
+        {
+            ResourceType resourceType = GetResourceType(spawnDebugger.spawnGroup);
+
+            // Verifica se o tipo de recurso está selecionado no enum
+            if ((selectedResources & resourceType) != 0)
+            {
+                Color color = GetGroupColor(spawnDebugger.spawnGroup);
+
+                foreach (var spawnArea in spawnDebugger.spawnAreas)
+                {
+                    Vector3 managerPos = transform.position;
+                    Vector3 areaPos = spawnArea.transform.position;
+
+                    Gizmos.color = color;
+                    Gizmos.DrawLine(managerPos, areaPos);
+                }
+            }
+        }
+    }
+#endif
 
     [ContextMenu("SetupSpawns")]
     private void SetupSpawns()
@@ -85,28 +109,6 @@ public class LevelDebugger : MonoBehaviour
         spawns.Clear();
     }
 
-    private void OnDrawGizmos()
-    {
-        foreach (var spawnDebugger in spawns)
-        {
-            ResourceType resourceType = GetResourceType(spawnDebugger.spawnGroup);
-
-            // Verifica se o tipo de recurso está selecionado no enum
-            if ((selectedResources & resourceType) != 0)
-            {
-                Color color = GetGroupColor(spawnDebugger.spawnGroup);
-
-                foreach (var spawnArea in spawnDebugger.spawnAreas)
-                {
-                    Vector3 managerPos = transform.position;
-                    Vector3 areaPos = spawnArea.transform.position;
-
-                    Gizmos.color = color;
-                    Gizmos.DrawLine(managerPos, areaPos);
-                }
-            }
-        }
-    }
 
     private ResourceType GetResourceType(ResourceGroup group)
     {

@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
+
 
 public class InventoryUI : MonoBehaviour
 {
@@ -11,9 +13,9 @@ public class InventoryUI : MonoBehaviour
     //public int totalQuantityItems;
 
     public static InventoryUI instance;
-
-    public List<ItemInfo> allItems;
     public List<ItemLabel> allItemsLabel;
+
+
 
     public GameObject itemIcon;
 
@@ -22,7 +24,7 @@ public class InventoryUI : MonoBehaviour
     void Start()
     {
         if (instance == null) instance = this;
-        allItems = new List<ItemInfo>();
+        allItemsLabel = new List<ItemLabel>();
         itemsHolder = transform.Find("Items");
     }
 
@@ -30,21 +32,37 @@ public class InventoryUI : MonoBehaviour
      
     public  void AddItem(ItemInfo Item)
     {
-        allItems.Add(Item);
+
         ItemLabel newItem = Instantiate(itemIcon,itemsHolder).GetComponent<ItemLabel>();
-        newItem.SetSprite(Item.itemSprite);
+        newItem.InitializeLabel(Item);
         allItemsLabel.Add(newItem);
 
     } 
 
-    public void CleanInventory(ItemInfo Item)
+    public void RemoveItem(ItemInfo item) 
     {
-        Transform[] items = itemsHolder.GetComponentsInChildren<Transform>();
+        bool hasRemoved = false;
 
-        foreach (Transform item in items) 
+        ItemLabel labelToRemove = allItemsLabel.Find(label => label.GetItemInfo() == item);
+        if(labelToRemove != null) 
         {
-            Destroy(item.gameObject);
+            labelToRemove.Erase();
+            allItemsLabel.Remove(labelToRemove);
+        
         }
+
+
+
+    }
+
+
+    public void CleanInventory()
+    {
+       foreach(ItemLabel label in allItemsLabel) 
+       {
+            label.Erase();
+
+       }
         
     }
 

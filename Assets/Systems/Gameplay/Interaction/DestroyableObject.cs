@@ -11,22 +11,23 @@ public class DestroyableObject : MonoBehaviour, IInteractable
     private float currentHealth;
 
     public UnityEvent OnDestroy;
-    private ParticleHander myParticles;
+    private ParticleHandler myParticles;
 
     private void OnEnable()
     {
         currentHealth = maxHealth;
     }
 
-    private void Start()
+    private void Awake()
     {
         currentHealth = maxHealth;
         lifeGauge = transform.Find("WorldCanvas").Find("LifeGauge").GetComponent<Image>();
-        myParticles = GetComponent<ParticleHander>();
+        myParticles = GetComponent<ParticleHandler>();
     }
 
     public void SetupDestroyable(int currentHealth, int maxHealth)
     {
+        if(lifeGauge != null) lifeGauge.fillAmount = 1;
         this.currentHealth = currentHealth;
         this.maxHealth = maxHealth;
     }
@@ -58,6 +59,6 @@ public class DestroyableObject : MonoBehaviour, IInteractable
 
     private void Die()
     {
-        OnDestroy?.Invoke();
+       OnDestroy?.Invoke();
     }
 }

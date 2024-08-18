@@ -16,6 +16,8 @@ public class PlayerInventorySO : ScriptableObject
 
     public void CleanTotemItemInfoList()
     {
+        InventoryUI.instance.CleanInventory();
+        itemInventory.Clear();
         totemInventory.Clear();
     }
 
@@ -35,7 +37,12 @@ public class PlayerInventorySO : ScriptableObject
 
     public void RemoveItemFromInventory(ItemInfo item)
     {
-        if (itemInventory.Contains(item)) itemInventory.Remove(item);
+        if (itemInventory.Contains(item))
+        {
+            itemInventory.Remove(item);
+            InventoryUI.instance.RemoveItem(item);
+
+        }
     }
 
     public void RemoveItensFromInventory(ItemInfo[] items)

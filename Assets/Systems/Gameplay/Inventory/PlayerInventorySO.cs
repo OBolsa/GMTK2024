@@ -14,6 +14,11 @@ public class PlayerInventorySO : ScriptableObject
         totemInventory.Clear();
     }
 
+    public void CleanTotemItemInfoList()
+    {
+        totemInventory.Clear();
+    }
+
     public bool HaveItem(ItemInfo item) => itemInventory.Contains(item);
     public bool HaveAnyItemsOfItemGroup(ResourceGroup group)
     {

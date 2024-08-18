@@ -9,6 +9,15 @@ public class WorkBench : MonoBehaviour, IInteractable
     public TotemItemType type;
     public bool canInteract;
 
+    private SpriteRenderer renderer;
+    private Color startColor;
+
+    private void Start()
+    {
+        renderer = GetComponent<SpriteRenderer>();
+        startColor = renderer.color;
+    }
+
     public void Interact()
     {
         if (!canInteract)
@@ -31,11 +40,18 @@ public class WorkBench : MonoBehaviour, IInteractable
             inventory.totemInventory.Add(totemItem);
 
             canInteract = false;
+            renderer.color = Color.black;
         }
         else
         {
             Debug.Log("Faltam itens!");
         }
+    }
+
+    public void RestartBench()
+    {
+        canInteract = true;
+        renderer.color = startColor;
     }
 
     private List<BuffType> GetBuffs(ItemInfo itemOne, ItemInfo itemTwo)

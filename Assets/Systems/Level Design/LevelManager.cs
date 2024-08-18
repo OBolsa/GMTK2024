@@ -40,10 +40,6 @@ public class LevelManager : MonoBehaviour
         PopulateItems();
     }
 
-    private void Start()
-    {
-        PopulateItems();
-    }
     [ContextMenu("Populate")]
     public void PopulateItems()
     {

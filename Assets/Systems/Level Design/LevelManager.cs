@@ -26,6 +26,10 @@ public class LevelManager : MonoBehaviour
         areas = FindObjectsOfType<SpawnArea>().ToList();
     }
 
+    private void Start()
+    {
+        PopulateItems();
+    }
     [ContextMenu("Populate")]
     public void PopulateItems()
     {

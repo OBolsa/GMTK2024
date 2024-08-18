@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WorkBench : MonoBehaviour, IInteractable
 {
@@ -45,6 +46,7 @@ public class WorkBench : MonoBehaviour, IInteractable
         }
         else
         {
+            InstantMessageHandler.instance.ShowMessage("You still miss some materials!!");
             Debug.Log("Faltam itens!");
         }
     }

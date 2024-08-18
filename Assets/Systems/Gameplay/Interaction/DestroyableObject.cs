@@ -67,8 +67,7 @@ public class DestroyableObject : MonoBehaviour, IInteractable
 
     private void Die()
     {
-        PfxDeath.transform.parent = null;
-        PfxDeath.Play();
+        Instantiate(PfxDeath,transform.position, Quaternion.identity);
         OnDestroy?.Invoke();
     }
 }

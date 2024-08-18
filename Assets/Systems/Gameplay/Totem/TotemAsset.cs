@@ -4,6 +4,7 @@ using UnityEngine;
 public class TotemAsset : MonoBehaviour
 {
     public List<TotemAssetPart> parts = new List<TotemAssetPart>();
+    public Animator animator;
 
     public void SetupPart(TotemItemType type, List<BuffType> buffs)
     {
@@ -12,6 +13,11 @@ public class TotemAsset : MonoBehaviour
         part.blue.gameObject.SetActive(buffs.Contains(BuffType.Blue));
         part.red.gameObject.SetActive(buffs.Contains(BuffType.Red));
         part.yellow.gameObject.SetActive(buffs.Contains(BuffType.Yellow));
+    }
+
+    public void Wobble()
+    {
+        animator.SetTrigger("wobble");
     }
 }
 

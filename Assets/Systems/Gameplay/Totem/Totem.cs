@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,6 +9,8 @@ public class Totem : MonoBehaviour, IInteractable
     public List<BuffType> buffs = new List<BuffType>();
     public float placementOffset;
     private List<TotemAsset> totems = new List<TotemAsset>();
+    [SerializeField]
+    private float wobbleInterval;
 
     public void Interact()
     {
@@ -37,10 +40,22 @@ public class Totem : MonoBehaviour, IInteractable
 
             inventory.CleanTotemItemInfoList();
             LevelManager.Instance.PlaceTotem();
+            StartCoroutine(WobbleColumn());
         }
         else
         {
             Debug.Log("Não tem todas as partes");
+        }
+    }
+
+    public IEnumerator WobbleColumn()
+    {
+        yield return new WaitForSeconds(1);
+
+        foreach (var item in totems)
+        {
+            item.Wobble();
+            yield return new WaitForSeconds(wobbleInterval);
         }
     }
 }

@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d82ac35f592a4b4baf1d39f6270f7f9, type: 3}
   m_Name: Game Balance Attributes
   m_EditorClassIdentifier: 
-  playerBaseMovementSpeed: 0
-  playerBaseDamage: 0
-  basicResourceHealth: 0
-  buffResourceHealth: 0
-  speedIncreasePerBuff: 0
-  damageIncreasePerBuff: 0
-  timeIncreasePerBuff: 0
+  playerBaseMovementSpeed: 10
+  playerBaseDamage: 1
+  basicResourceHealth: 5
+  buffResourceHealth: 10
+  speedIncreasePerBuff: 2
+  damageIncreasePerBuff: 0.5
+  timeIncreasePerBuff: 2

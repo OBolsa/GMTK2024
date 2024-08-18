@@ -40,6 +40,8 @@ public class DestroyableObject : MonoBehaviour, IInteractable
     {
         if (currentHealth > 0)
         {
+            float playerDamage = LevelManager.Instance.attributes.GetPlayerDamage();
+
             currentHealth -= 1;
             lifeGauge.fillAmount = (float)(currentHealth / maxHealth);
             if (myParticles != null) myParticles.PlayVFX();

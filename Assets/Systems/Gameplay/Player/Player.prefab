@@ -175,7 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4111f3aba9fa0cb41bcb894d11ef2428, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 10
+  attributes: {fileID: 11400000, guid: aa82869b5c15b564f98b165343620c98, type: 2}
 --- !u!114 &347903009634211993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -188,6 +188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 750d39a92a3b3cd45ab3bcbb09a401b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventory: {fileID: 11400000, guid: d9574d28bcf5621448930bdae3f4574f, type: 2}
 --- !u!1 &3303399482486627896
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,6 +16,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spawn Area - Pedra Amarela
       objectReference: {fileID: 0}
+    - target: {fileID: 4046349126605845131, guid: ff07ee70349aa074c97ecc6ed18cd233, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8535726931973773300, guid: ff07ee70349aa074c97ecc6ed18cd233, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.54

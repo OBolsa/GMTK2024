@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &1337178112978685682
+--- !u!1001 &8749658864020292450
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -11,10 +11,14 @@ PrefabInstance:
     - target: {fileID: 2631001444675733038, guid: ff07ee70349aa074c97ecc6ed18cd233, type: 3}
       propertyPath: spawnItem
       value: 
-      objectReference: {fileID: 11400000, guid: a50a32e60f1421841a3df787e3704238, type: 2}
+      objectReference: {fileID: 11400000, guid: 46af0816e7a8d6d4aad102bd935c5440, type: 2}
     - target: {fileID: 4046349126605845131, guid: ff07ee70349aa074c97ecc6ed18cd233, type: 3}
       propertyPath: m_Name
-      value: Spawn Area - Grama Vermelha
+      value: Spawn Area - Madeira Azul
+      objectReference: {fileID: 0}
+    - target: {fileID: 4046349126605845131, guid: ff07ee70349aa074c97ecc6ed18cd233, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8535726931973773300, guid: ff07ee70349aa074c97ecc6ed18cd233, type: 3}
       propertyPath: m_LocalPosition.x

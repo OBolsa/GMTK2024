@@ -1220,90 +1220,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrains and Details_51
-      rect:
-        serializedVersion: 2
-        x: 1750
-        y: 1750
-        width: 250
-        height: 250
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cf6b06e830a24ba44b539d04caf93f5e
-      internalID: -1993962905
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Terrains and Details_52
-      rect:
-        serializedVersion: 2
-        x: 2000
-        y: 1750
-        width: 250
-        height: 250
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8de170f17a467e14b95938ea3c93defb
-      internalID: -1878692373
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Terrains and Details_53
-      rect:
-        serializedVersion: 2
-        x: 2250
-        y: 1750
-        width: 250
-        height: 250
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e9d07ec3ef73ff14c9cd398271319c52
-      internalID: 692824099
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Terrains and Details_54
-      rect:
-        serializedVersion: 2
-        x: 2500
-        y: 1750
-        width: 250
-        height: 250
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a6c9c2c11633b57419b4faa55d565725
-      internalID: -1848265109
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Terrains and Details_55
       rect:
         serializedVersion: 2
@@ -1373,9 +1289,9 @@ TextureImporter:
         x: 1750
         y: 1500
         width: 250
-        height: 250
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1394,9 +1310,9 @@ TextureImporter:
         x: 2000
         y: 1500
         width: 250
-        height: 250
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1412,12 +1328,12 @@ TextureImporter:
       name: Terrains and Details_60
       rect:
         serializedVersion: 2
-        x: 2250
+        x: 2248
         y: 1500
         width: 250
-        height: 250
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1436,9 +1352,9 @@ TextureImporter:
         x: 2500
         y: 1500
         width: 250
-        height: 250
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2719,7 +2635,7 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2740,7 +2656,7 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

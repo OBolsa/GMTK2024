@@ -34,7 +34,7 @@ public class DestroyableObject : MonoBehaviour, IInteractable
         this.maxHealth = item.itemLife;
         this.currentHealth = this.maxHealth;
         this.hitSfx = item.itemSfx;
-        Debug.Log(hitSfx);
+       
     }
 
     public void Interact()

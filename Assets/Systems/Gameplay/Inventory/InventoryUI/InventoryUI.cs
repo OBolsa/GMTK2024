@@ -60,8 +60,12 @@ public class InventoryUI : MonoBehaviour
     {
        foreach(ItemLabel label in allItemsLabel) 
        {
-            label.Erase();
-            allItemsLabel.Remove(label);
+            if(label != null)
+            {
+
+                label.Erase();
+                allItemsLabel.Remove(label);
+            }
             
 
        }

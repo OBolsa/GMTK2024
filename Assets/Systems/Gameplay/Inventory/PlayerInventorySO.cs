@@ -29,6 +29,7 @@ public class PlayerInventorySO : ScriptableObject
 
     public void AddItemToInventory(ItemInfo item)
     {
+        InventoryUI.instance.AddItem(item);
         itemInventory.Add(item);
     }
 

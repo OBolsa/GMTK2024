@@ -8,6 +8,7 @@ public class LevelManager : MonoBehaviour
     public LevelSpawner level;
     public int totems;
     public List<SpawnArea> areas = new List<SpawnArea>();
+    public List<WorkBench> workBench = new List<WorkBench>();
     private ResourceGroup[] itemGroups;
 
     private void Awake()
@@ -24,12 +25,21 @@ public class LevelManager : MonoBehaviour
         itemGroups[2] = Resources.Load<ResourceGroup>("Resources Groups/Grama");
 
         areas = FindObjectsOfType<SpawnArea>().ToList();
+        workBench = FindObjectsOfType<WorkBench>().ToList();
     }
 
     private void Start()
     {
         PopulateItems();
     }
+
+    public void PlaceTotem()
+    {
+        totems++;
+        workBench.ForEach(bench => bench.RestartBench());
+        PopulateItems();
+    }
+
     [ContextMenu("Populate")]
     public void PopulateItems()
     {

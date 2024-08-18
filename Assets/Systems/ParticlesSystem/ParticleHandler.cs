@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.ParticleSystemJobs;
 
-public class ParticleHander : MonoBehaviour
+public class ParticleHandler : MonoBehaviour
 {
     public ParticleSystem particlesToHandle;
 

@@ -15,4 +15,6 @@ MonoBehaviour:
   itemName: Prata
   itemDescription: 
   itemSprite: {fileID: 0}
-  itemRequirements: []
+  itemSfx: {fileID: 8300000, guid: 4c875c429d9d06242b52a7e7522abbc2, type: 3}
+  itemBuffs: 
+  itemLife: 0

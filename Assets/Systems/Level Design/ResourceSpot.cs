@@ -10,7 +10,7 @@ public class ResourceSpot : MonoBehaviour
     {
         resourceItem = item;
         sr.sprite = resourceItem.itemSprite;
-        destroyableConfigs.SetupDestroyable(resourceItem.itemLife, resourceItem.itemLife);
+        destroyableConfigs.SetupDestroyable(resourceItem);
     }
 
     public void GiveItemToPlayer(PlayerInventorySO inventory)

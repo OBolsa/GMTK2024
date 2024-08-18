@@ -71,6 +71,12 @@ public class AudioManager : MonoBehaviour
     }
 
 
+
+    public void PlaySfx(AudioClip audio) 
+    {
+        RandomizePitchAndPlay(audio);
+    }
+
     public void PlaySfx(SFXs sfx)
     {
 
@@ -96,6 +102,14 @@ public class AudioManager : MonoBehaviour
         float randomPitch = Random.Range(0.8f,1.2f);
         sfx.pitch = randomPitch;
         sfx.Play();
+    }
+
+    void RandomizePitchAndPlay(AudioClip sfx)
+    {
+        float randomPitch = Random.Range(0.8f, 1.2f);
+        SFXs[0].pitch = randomPitch;
+        SFXs[0].clip = sfx;
+        SFXs[0].Play();
     }
 
 

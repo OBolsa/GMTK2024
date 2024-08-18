@@ -15,5 +15,6 @@ MonoBehaviour:
   itemName: Madeira Vermelha
   itemDescription: 
   itemSprite: {fileID: -1642034843, guid: d475143a289a8a147a903369121946e7, type: 3}
+  itemSfx: {fileID: 8300000, guid: 0d63a43ae0ecded4391d99a4ed29989c, type: 3}
   itemBuffs: 02000000
   itemLife: 6

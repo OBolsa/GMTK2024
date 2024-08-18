@@ -10,6 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7794244242974549196}
   - component: {fileID: 3483188982624215467}
+  - component: {fileID: 8117195378066490633}
+  - component: {fileID: 3900816864094305800}
+  - component: {fileID: 9135020147314589296}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -47,3 +50,49 @@ MonoBehaviour:
   level: {fileID: 11400000, guid: bf2deb9cb587516408fbedb1a1c29171, type: 2}
   totems: 0
   areas: []
+  workBench: []
+--- !u!114 &8117195378066490633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308350244004739101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e08e0afbd9e3b38449ffcfa72310033f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  missions:
+  - {fileID: 11400000, guid: f015d3c79ebf1b14fbed6acb270a0ae4, type: 2}
+  - {fileID: 11400000, guid: 0290f2f68c4e3494fb2d220bb314d56c, type: 2}
+  - {fileID: 11400000, guid: a936eb6aa68a43648a50447dfd4ca5bb, type: 2}
+  - {fileID: 11400000, guid: 31c1e1e40b38cd94c8a809590a6d989b, type: 2}
+--- !u!114 &3900816864094305800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308350244004739101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cceadf5c0e42ae940b645488404db7ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  instantMessagePreFab: {fileID: 5932608152432641893, guid: 457faa08f88abbc4eb576622d7ffb48b, type: 3}
+--- !u!114 &9135020147314589296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308350244004739101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904f512da709ac140af29ef2e6120ce5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedResources: 0
+  averageDistancePerSelection: 0

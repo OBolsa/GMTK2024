@@ -13,14 +13,16 @@ public class DestroyableObject : MonoBehaviour, IInteractable
     public UnityEvent OnDestroy;
     private ParticleHander myParticles;
 
+    private void OnEnable()
+    {
+        currentHealth = maxHealth;
+    }
 
     private void Start()
     {
         currentHealth = maxHealth;
         lifeGauge = transform.Find("WorldCanvas").Find("LifeGauge").GetComponent<Image>();
         myParticles = GetComponent<ParticleHander>();
-
-
     }
 
     public void SetupDestroyable(int currentHealth, int maxHealth)
@@ -42,16 +44,16 @@ public class DestroyableObject : MonoBehaviour, IInteractable
             lifeGauge.fillAmount = (float)(currentHealth / maxHealth);
             if (myParticles != null) myParticles.PlayVFX();
             AudioManager.instance.PlaySfx(SFXs.SMASH_BUMP);
-        InstantMessageHandler.instance.ShowMessage("Broke the box! ");
+            InstantMessageHandler.instance.ShowMessage("Broke the box! ");
 
             if (currentHealth <= 0) Die();
         }
     }
 
-    public void DestroySFX() 
+    public void DestroySFX()
     {
         AudioManager.instance.PlaySfx(SFXs.BOX_CRASH);
-    
+
     }
 
     private void Die()

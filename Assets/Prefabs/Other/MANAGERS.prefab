@@ -779,7 +779,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9135020147314589296, guid: 35192547ce8a1944b806b607746089c3, type: 3}
       propertyPath: averageDistancePerSelection
-      value: 72.49609
+      value: 73.05035
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

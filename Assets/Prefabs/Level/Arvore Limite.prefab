@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2635822732018969918}
   - component: {fileID: 4753621507178886922}
+  - component: {fileID: 7840519321695601928}
   m_Layer: 0
   m_Name: Arvore Limite
   m_TagString: Untagged
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 9
   m_Sprite: {fileID: 1081936491, guid: 39f2b9f7a6aae754f8627c8377c59347, type: 3}
-  m_Color: {r: 0.4339623, g: 0.3582236, b: 0.3582236, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -84,3 +85,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7840519321695601928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6281050401579269784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8011660ff87bc6b44b00dcf80d9a0bf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sr: {fileID: 4753621507178886922}
+  sprites:
+  - {fileID: 1081936491, guid: 39f2b9f7a6aae754f8627c8377c59347, type: 3}
+  - {fileID: 616376906, guid: 39f2b9f7a6aae754f8627c8377c59347, type: 3}
+  - {fileID: -940282869, guid: 39f2b9f7a6aae754f8627c8377c59347, type: 3}
+  - {fileID: -890229268, guid: 39f2b9f7a6aae754f8627c8377c59347, type: 3}

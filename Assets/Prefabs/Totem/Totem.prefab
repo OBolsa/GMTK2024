@@ -224,5 +224,5 @@ MonoBehaviour:
   totemPrefab: {fileID: 8844287416469590620, guid: 0d44c60cf1c87d1488a9cdf7e61d5b51, type: 3}
   inventory: {fileID: 11400000, guid: d9574d28bcf5621448930bdae3f4574f, type: 2}
   buffs: 
-  placementOffset: 1.1
+  placementOffset: 0.9
   wobbleInterval: 0.15

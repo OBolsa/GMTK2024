@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2276578876165521446}
   - component: {fileID: 8929464881691534575}
   - component: {fileID: 4361740169633674260}
+  - component: {fileID: 1748712360813745759}
   m_Layer: 0
   m_Name: WorkBench - Asas
   m_TagString: Untagged
@@ -74,8 +75,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -997363061
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 987135838, guid: d475143a289a8a147a903369121946e7, type: 3}
   m_Color: {r: 1, g: 0.5, b: 0.5, a: 1}
@@ -195,6 +196,20 @@ MonoBehaviour:
   resourceTwo: {fileID: 11400000, guid: 0e8cac306303cd1498e05dbacce8f7f9, type: 2}
   type: 3
   canInteract: 1
+--- !u!114 &1748712360813745759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3237532586060847027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65e189c2f1eb534dbcd17ab9ac10499, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sr: {fileID: 7453930379452151933}
+  liveUpdate: 0
 --- !u!1001 &1994875282095391029
 PrefabInstance:
   m_ObjectHideFlags: 0

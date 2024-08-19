@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -17,12 +16,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnEnable()
     {
-        LevelManager.Instance.TotemPartDone += MovementBuffsUpdate;
+        LevelManager.Instance.TotemPlaced += MovementBuffsUpdate;
     }
 
     private void OnDisable()
     {
-        LevelManager.Instance.TotemPartDone -= MovementBuffsUpdate;
+        LevelManager.Instance.TotemPlaced -= MovementBuffsUpdate;
     }
 
     private void Start()
@@ -35,17 +34,9 @@ public class PlayerMovement : MonoBehaviour
         Move();
     }
 
-    private void MovementBuffsUpdate(TotemItemInfo totemInfo)
+    private void MovementBuffsUpdate()
     {
-        List<BuffType> totemBuffs = new List<BuffType>(totemInfo.totemItemBuffs);
-
-        foreach (var buff in totemBuffs)
-        {
-            if (buff == BuffType.Blue)
-            {
-                movementSpeed += attributes.speedIncreasePerBuff;
-            }
-        }
+        movementSpeed = attributes.totalSpeed;
     }
 
     private void Move()

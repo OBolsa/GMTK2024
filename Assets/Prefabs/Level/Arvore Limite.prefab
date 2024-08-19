@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2635822732018969918}
   - component: {fileID: 4753621507178886922}
   - component: {fileID: 7840519321695601928}
+  - component: {fileID: 5717312266608360730}
   m_Layer: 0
   m_Name: Arvore Limite
   m_TagString: Untagged
@@ -103,3 +104,17 @@ MonoBehaviour:
   - {fileID: 616376906, guid: 39f2b9f7a6aae754f8627c8377c59347, type: 3}
   - {fileID: -940282869, guid: 39f2b9f7a6aae754f8627c8377c59347, type: 3}
   - {fileID: -890229268, guid: 39f2b9f7a6aae754f8627c8377c59347, type: 3}
+--- !u!114 &5717312266608360730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6281050401579269784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65e189c2f1eb534dbcd17ab9ac10499, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sr: {fileID: 4753621507178886922}
+  liveUpdate: 0

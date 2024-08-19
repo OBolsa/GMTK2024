@@ -39,7 +39,10 @@ public class Totem : MonoBehaviour, IInteractable
             buffs.AddRange(asa.totemItemBuffs);
 
             inventory.CleanTotemItemInfoList();
+
+            LevelManager.Instance.attributes.UpdateBuffs(buffs);
             LevelManager.Instance.PlaceTotem();
+
             StartCoroutine(WobbleColumn());
         }
         else

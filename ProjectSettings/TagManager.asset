@@ -44,6 +44,9 @@ TagManager:
   - name: Ground
     uniqueID: 1863503567
     locked: 0
+  - name: BlockLayer
+    uniqueID: 4018443157
+    locked: 0
   - name: GamePlay
     uniqueID: 3297604235
     locked: 0

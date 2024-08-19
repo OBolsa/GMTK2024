@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2994936127013354714}
   - component: {fileID: 5678558440497007356}
   - component: {fileID: 1338148821299219047}
+  - component: {fileID: 2466349449161450430}
   m_Layer: 0
   m_Name: WorkBench - Cocar
   m_TagString: Untagged
@@ -74,9 +75,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -997363061
+  m_SortingLayer: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 987135838, guid: d475143a289a8a147a903369121946e7, type: 3}
   m_Color: {r: 0.5, g: 0.5, b: 1, a: 1}
   m_FlipX: 0
@@ -195,6 +196,20 @@ MonoBehaviour:
   resourceTwo: {fileID: 11400000, guid: 30c0b365255d4474e924255af4ca4ab6, type: 2}
   type: 2
   canInteract: 1
+--- !u!114 &2466349449161450430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2483460718873385986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65e189c2f1eb534dbcd17ab9ac10499, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sr: {fileID: 2429973959933590984}
+  liveUpdate: 0
 --- !u!1001 &3336681897370020653
 PrefabInstance:
   m_ObjectHideFlags: 0

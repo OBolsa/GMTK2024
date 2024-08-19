@@ -76,6 +76,7 @@ public class LevelManager : MonoBehaviour
     public void Fail()
     {
         LevelFailed?.Invoke(totems);
+        GameOverManager.instance.GameOver();
     }
 
     [ContextMenu("Populate")]

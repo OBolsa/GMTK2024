@@ -2672,12 +2672,12 @@ TextureImporter:
       name: Terrains and Details_51
       rect:
         serializedVersion: 2
-        x: 830
-        y: 1515
-        width: 100
-        height: 100
+        x: 775
+        y: 1520
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2693,12 +2693,12 @@ TextureImporter:
       name: Terrains and Details_52
       rect:
         serializedVersion: 2
-        x: 1080
-        y: 1515
-        width: 100
-        height: 100
+        x: 1025
+        y: 1520
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2714,12 +2714,12 @@ TextureImporter:
       name: Terrains and Details_53
       rect:
         serializedVersion: 2
-        x: 1330
-        y: 1515
-        width: 100
-        height: 100
+        x: 1275
+        y: 1520
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2735,12 +2735,12 @@ TextureImporter:
       name: Terrains and Details_54
       rect:
         serializedVersion: 2
-        x: 1580
-        y: 1515
-        width: 100
-        height: 100
+        x: 1525
+        y: 1520
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

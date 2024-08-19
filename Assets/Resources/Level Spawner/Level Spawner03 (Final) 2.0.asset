@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bc37f7b9a4ac6e498a4bf1101c858dc, type: 3}
+  m_Name: Level Spawner03 (Final) 2.0
+  m_EditorClassIdentifier: 
+  configs:
+  - spawnAmountPerResource: 35
+    spawnItemsWithBuff: 0
+    buildTimerInSeconds: 144
+  - spawnAmountPerResource: 20
+    spawnItemsWithBuff: 0
+    buildTimerInSeconds: 121
+  - spawnAmountPerResource: 20
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 118
+  - spawnAmountPerResource: 17
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 117
+  - spawnAmountPerResource: 15
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 84
+  - spawnAmountPerResource: 15
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 83
+  - spawnAmountPerResource: 15
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 82
+  - spawnAmountPerResource: 15
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 81
+  - spawnAmountPerResource: 13
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 72
+  - spawnAmountPerResource: 13
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 70
+  - spawnAmountPerResource: 13
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 70
+  - spawnAmountPerResource: 13
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 70
+  - spawnAmountPerResource: 10
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 60
+  - spawnAmountPerResource: 10
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 60
+  - spawnAmountPerResource: 10
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 59
+  - spawnAmountPerResource: 9
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 49
+  - spawnAmountPerResource: 9
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 49
+  - spawnAmountPerResource: 3
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 45
+  - spawnAmountPerResource: 3
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 45
+  - spawnAmountPerResource: 3
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 35
+  - spawnAmountPerResource: 3
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 35

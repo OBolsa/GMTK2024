@@ -89,6 +89,7 @@ public class AudioManager : MonoBehaviour
             case global::SFXs.TOTEN:    
                 RandomizePitchAndPlay(SFXs[2]);
                 RandomizePitchAndPlay(SFXs[3]);
+                RandomizePitchAndPlay(SFXs[4]);
                 break;
 
             default:

@@ -1,12 +1,10 @@
-using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
 public class JournalPanel : MonoBehaviour
 {
-
     private TextMeshProUGUI missionLabel;
     private TextMeshProUGUI missionTimer;
     private List<TextMeshProUGUI> missionGoals;
@@ -28,10 +26,10 @@ public class JournalPanel : MonoBehaviour
         missionGoals = new List<TextMeshProUGUI>();
     }
 
-    public void SetCurrentMission(MissionInfo mission) 
+    public void SetCurrentMission(MissionInfo mission)
     {
         missionLabel.text = mission.missionLabel;
-        
+
 
         foreach (string goal in mission.missionGoals)
         {
@@ -40,14 +38,14 @@ public class JournalPanel : MonoBehaviour
 
         }
 
-       // missionTime = mission.missionTime;
+        // missionTime = mission.missionTime;
 
     }
 
 
 
 
-    public void UpdateTimer(float time) 
+    public void UpdateTimer(float time)
     {
         missionTimer.text = time.ToString("F1");
         timerImage.fillAmount = time / missionTime;

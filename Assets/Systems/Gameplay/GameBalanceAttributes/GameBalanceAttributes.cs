@@ -19,6 +19,7 @@ public class GameBalanceAttributes : ScriptableObject
 
     private float playerDamage;
 
+    [Header("Current Attributes")]
     public float totalSpeed;
     public float totalDamage;
     public float totalExtraTime;

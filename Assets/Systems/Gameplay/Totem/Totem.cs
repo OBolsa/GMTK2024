@@ -12,6 +12,11 @@ public class Totem : MonoBehaviour, IInteractable
     [SerializeField]
     private float wobbleInterval;
 
+    private void Start()
+    {
+        LevelManager.Instance.attributes.UpdateBuffs(buffs);
+    }
+
     public void Interact()
     {
         List<TotemItemInfo> parts = inventory.totemInventory;

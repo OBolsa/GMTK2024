@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        movementSpeed = attributes.playerBaseMovementSpeed;
+        movementSpeed = attributes.totalSpeed;
     }
 
     private void Update()

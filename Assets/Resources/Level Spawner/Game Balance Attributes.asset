@@ -19,3 +19,6 @@ MonoBehaviour:
   speedIncreasePerBuff: 2
   damageIncreasePerBuff: 0.5
   timeIncreasePerBuff: 2
+  totalSpeed: 10
+  totalDamage: 1
+  totalExtraTime: 0

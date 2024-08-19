@@ -49,6 +49,7 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
+        areas.ForEach(a => a.SetSpawnTransformersActive(false));
         PopulateItems();
     }
 

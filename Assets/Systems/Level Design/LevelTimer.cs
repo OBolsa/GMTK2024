@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class LevelTimer : MonoBehaviour
@@ -10,6 +9,15 @@ public class LevelTimer : MonoBehaviour
     bool isCounting;
     MissionsManager mission;
 
+    private void OnEnable()
+    {
+        LevelManager.Instance.TotemPlaced += UpdateExtraTime;
+    }
+
+    private void OnDisable()
+    {
+        LevelManager.Instance.TotemPlaced -= UpdateExtraTime;
+    }
 
     private void Start()
     {
@@ -23,17 +31,9 @@ public class LevelTimer : MonoBehaviour
         }
     }
 
-    private void UpdateExtraTime(TotemItemInfo totemInfo)
+    private void UpdateExtraTime()
     {
-        List<BuffType> totemBuffs = new List<BuffType>(totemInfo.totemItemBuffs);
-
-        foreach (var buff in totemBuffs)
-        {
-            if (buff == BuffType.Yellow)
-            {
-                extraTime += LevelManager.Instance.attributes.timeIncreasePerBuff;
-            }
-        }
+        extraTime = LevelManager.Instance.attributes.totalExtraTime;
     }
 
     public void StartCount(float time)

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "SO/Balance")]
@@ -18,7 +19,35 @@ public class GameBalanceAttributes : ScriptableObject
 
     private float playerDamage;
 
-    public float GetPlayerDamage() => playerDamage;
+    [Header("Current Attributes")]
+    public float totalSpeed;
+    public float totalDamage;
+    public float totalExtraTime;
+
+    public void UpdateBuffs(List<BuffType> buffs)
+    {
+        totalExtraTime = 0;
+        totalDamage = playerBaseDamage;
+        totalSpeed = playerBaseMovementSpeed;
+
+        foreach (var buff in buffs)
+        {
+            if (buff == BuffType.Yellow)
+            {
+                totalExtraTime += timeIncreasePerBuff;
+            }
+            else if (buff == BuffType.Red)
+            {
+                totalDamage += damageIncreasePerBuff;
+            }
+            else if (buff == BuffType.Blue)
+            {
+                totalSpeed += speedIncreasePerBuff;
+            }
+        }
+    }
+
+    public float GetPlayerDamage() => totalDamage;
     public float SetPlayerDamage(float newDamage) => playerDamage = newDamage;
 
 }

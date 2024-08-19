@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4065853301470517956}
   - component: {fileID: 4598811651234521100}
   - component: {fileID: 1364745742963006565}
+  - component: {fileID: 2142432839089974030}
   m_Layer: 0
   m_Name: WorkBench - Carranca
   m_TagString: Untagged
@@ -74,9 +75,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -997363061
+  m_SortingLayer: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 987135838, guid: d475143a289a8a147a903369121946e7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -195,6 +196,20 @@ MonoBehaviour:
   resourceTwo: {fileID: 11400000, guid: 0e8cac306303cd1498e05dbacce8f7f9, type: 2}
   type: 1
   canInteract: 1
+--- !u!114 &2142432839089974030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4921418330808462054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65e189c2f1eb534dbcd17ab9ac10499, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sr: {fileID: 3438447112789976676}
+  liveUpdate: 0
 --- !u!1001 &4015483761436539807
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 204831782809877627}
   - component: {fileID: 729701820671657150}
   - component: {fileID: 347903009634211993}
+  - component: {fileID: 406271643669676720}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -125,8 +126,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -997363061
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 1523202574, guid: 13b53b288a3162f479986ea261cac78f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -189,6 +190,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 11400000, guid: d9574d28bcf5621448930bdae3f4574f, type: 2}
+--- !u!114 &406271643669676720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557310451981226549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65e189c2f1eb534dbcd17ab9ac10499, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sr: {fileID: 3119359544388860076}
+  liveUpdate: 1
 --- !u!1 &3303399482486627896
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,7 +214,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6003570151259607902}
   - component: {fileID: 7205909640615979205}
-  - component: {fileID: 7514134427960578630}
+  - component: {fileID: 8682487112548705998}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -274,8 +289,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &7514134427960578630
-BoxCollider2D:
+--- !u!58 &8682487112548705998
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -307,15 +322,5 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Radius: 0.4

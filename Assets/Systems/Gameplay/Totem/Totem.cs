@@ -12,6 +12,11 @@ public class Totem : MonoBehaviour, IInteractable
     [SerializeField]
     private float wobbleInterval;
 
+    private void Start()
+    {
+        LevelManager.Instance.attributes.UpdateBuffs(buffs);
+    }
+
     public void Interact()
     {
         List<TotemItemInfo> parts = inventory.totemInventory;
@@ -39,7 +44,10 @@ public class Totem : MonoBehaviour, IInteractable
             buffs.AddRange(asa.totemItemBuffs);
 
             inventory.CleanTotemItemInfoList();
+
+            LevelManager.Instance.attributes.UpdateBuffs(buffs);
             LevelManager.Instance.PlaceTotem();
+
             StartCoroutine(WobbleColumn());
         }
         else

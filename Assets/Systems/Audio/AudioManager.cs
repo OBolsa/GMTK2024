@@ -86,6 +86,11 @@ public class AudioManager : MonoBehaviour
             
             case global::SFXs.BOX_CRASH: RandomizePitchAndPlay(SFXs[1]); break;
 
+            case global::SFXs.TOTEN:    
+                RandomizePitchAndPlay(SFXs[2]);
+                RandomizePitchAndPlay(SFXs[3]);
+                RandomizePitchAndPlay(SFXs[4]);
+                break;
 
             default:
                 SFXs[0].Play();
@@ -135,5 +140,6 @@ public enum SFXs
 {
     
     SMASH_BUMP,
-    BOX_CRASH
+    BOX_CRASH, 
+    TOTEN
 }

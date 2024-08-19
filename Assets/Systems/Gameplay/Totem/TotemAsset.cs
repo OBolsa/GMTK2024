@@ -13,11 +13,12 @@ public class TotemAsset : MonoBehaviour
         part.blue.gameObject.SetActive(buffs.Contains(BuffType.Blue));
         part.red.gameObject.SetActive(buffs.Contains(BuffType.Red));
         part.yellow.gameObject.SetActive(buffs.Contains(BuffType.Yellow));
+        animator.SetTrigger("wobble");
+        AudioManager.instance.PlaySfx(SFXs.TOTEN);
     }
 
     public void Wobble()
     {
-        animator.SetTrigger("wobble");
     }
 }
 

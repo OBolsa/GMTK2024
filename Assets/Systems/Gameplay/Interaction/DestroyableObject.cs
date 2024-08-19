@@ -58,12 +58,12 @@ public class DestroyableObject : MonoBehaviour, IInteractable
     public void DestroySFX()
     {
         InstantMessageHandler.instance.ShowMessage("Got plus 1 resources! ");
-        AudioManager.instance.PlaySfx(SFXs.BOX_CRASH);
 
     }
 
     private void Die()
     {
+        AudioManager.instance.PlaySfx(SFXs.SMASH_BUMP);
        OnDestroy?.Invoke();
     }
 }

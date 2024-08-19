@@ -82,7 +82,7 @@ public class AudioManager : MonoBehaviour
 
         switch (sfx) 
         {
-            case global::SFXs.SMASH_BUMP: RandomizePitchAndPlay(SFXs[0]); break;
+            case global::SFXs.SMASH_BUMP: RandomizePitchAndPlay(SFXs[5]); break;
             
             case global::SFXs.BOX_CRASH: RandomizePitchAndPlay(SFXs[1]); break;
 

@@ -18,14 +18,56 @@ MonoBehaviour:
     buildTimerInSeconds: 144
   - spawnAmountPerResource: 25
     spawnItemsWithBuff: 0
+    buildTimerInSeconds: 106
+  - spawnAmountPerResource: 25
+    spawnItemsWithBuff: 0
     buildTimerInSeconds: 100
+  - spawnAmountPerResource: 20
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 96
+  - spawnAmountPerResource: 20
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 92
+  - spawnAmountPerResource: 20
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 87
+  - spawnAmountPerResource: 20
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 82
+  - spawnAmountPerResource: 20
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 78
+  - spawnAmountPerResource: 20
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 77
   - spawnAmountPerResource: 20
     spawnItemsWithBuff: 1
     buildTimerInSeconds: 74
   - spawnAmountPerResource: 12
     spawnItemsWithBuff: 1
+    buildTimerInSeconds: 98
+  - spawnAmountPerResource: 12
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 93
+  - spawnAmountPerResource: 12
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 89
+  - spawnAmountPerResource: 12
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 84
+  - spawnAmountPerResource: 12
+    spawnItemsWithBuff: 1
     buildTimerInSeconds: 80
-  - spawnAmountPerResource: 9
+  - spawnAmountPerResource: 6
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 110
+  - spawnAmountPerResource: 6
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 103
+  - spawnAmountPerResource: 6
+    spawnItemsWithBuff: 1
+    buildTimerInSeconds: 98
+  - spawnAmountPerResource: 6
     spawnItemsWithBuff: 1
     buildTimerInSeconds: 92
   - spawnAmountPerResource: 4
@@ -33,43 +75,4 @@ MonoBehaviour:
     buildTimerInSeconds: 101
   - spawnAmountPerResource: 2
     spawnItemsWithBuff: 1
-    buildTimerInSeconds: 145
-  - spawnAmountPerResource: 700000
-    spawnItemsWithBuff: 1
-    buildTimerInSeconds: 100000
-  - spawnAmountPerResource: 12
-    spawnItemsWithBuff: 1
-    buildTimerInSeconds: 65
-  - spawnAmountPerResource: 6
-    spawnItemsWithBuff: 1
-    buildTimerInSeconds: 65
-  - spawnAmountPerResource: 5
-    spawnItemsWithBuff: 1
-    buildTimerInSeconds: 60
-  - spawnAmountPerResource: 5
-    spawnItemsWithBuff: 1
-    buildTimerInSeconds: 60
-  - spawnAmountPerResource: 5
-    spawnItemsWithBuff: 1
-    buildTimerInSeconds: 60
-  - spawnAmountPerResource: 4
-    spawnItemsWithBuff: 1
-    buildTimerInSeconds: 60
-  - spawnAmountPerResource: 4
-    spawnItemsWithBuff: 1
-    buildTimerInSeconds: 60
-  - spawnAmountPerResource: 4
-    spawnItemsWithBuff: 1
-    buildTimerInSeconds: 60
-  - spawnAmountPerResource: 4
-    spawnItemsWithBuff: 1
-    buildTimerInSeconds: 60
-  - spawnAmountPerResource: 4
-    spawnItemsWithBuff: 1
-    buildTimerInSeconds: 60
-  - spawnAmountPerResource: 4
-    spawnItemsWithBuff: 1
-    buildTimerInSeconds: 60
-  - spawnAmountPerResource: 4
-    spawnItemsWithBuff: 1
-    buildTimerInSeconds: 60
+    buildTimerInSeconds: 93

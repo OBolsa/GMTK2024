@@ -26,7 +26,7 @@ public class GameOverManager : MonoBehaviour
     
     void RestartGame() 
     {
-
+        Time.timeScale = 1;
         SceneManager.LoadScene("Level");
     
     }

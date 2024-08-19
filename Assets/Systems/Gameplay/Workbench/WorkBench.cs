@@ -13,8 +13,12 @@ public class WorkBench : MonoBehaviour, IInteractable
     private SpriteRenderer renderer;
     private Color startColor;
 
+
+    private ParticleSystem particles;
+
     private void Start()
     {
+        particles = GetComponentInChildren<ParticleSystem>();
         renderer = GetComponent<SpriteRenderer>();
         startColor = renderer.color;
     }
@@ -43,6 +47,9 @@ public class WorkBench : MonoBehaviour, IInteractable
             canInteract = false;
             renderer.color = Color.black;
             LevelManager.Instance.TotemPartDone?.Invoke(totemItem);
+            particles.Play();
+            AudioManager.instance.PlaySfx(SFXs.SMASH_BUMP);
+
         }
         else
         {

@@ -29,7 +29,7 @@ public class MainMenu : MonoBehaviour
     void PlayButton() 
     {
 
-        SceneManager.LoadScene("Level");
+        SceneManager.LoadScene("Level1");
     
     }
 

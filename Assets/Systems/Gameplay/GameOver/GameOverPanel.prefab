@@ -67,8 +67,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: GAME OVER
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: bac923d0a8dcc624e82d0dd4a921deb7, type: 2}
-  m_sharedMaterial: {fileID: -1427262726121728254, guid: bac923d0a8dcc624e82d0dd4a921deb7, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 820cf34934f60544781ac02acd82a264, type: 2}
+  m_sharedMaterial: {fileID: -4724265270921511117, guid: 820cf34934f60544781ac02acd82a264, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -227,6 +227,10 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 32
       objectReference: {fileID: 0}
+    - target: {fileID: 4303356433843572486, guid: da18aba2be8649046abce2b19b5abdc1, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 820cf34934f60544781ac02acd82a264, type: 2}
     - target: {fileID: 4303356433843572486, guid: da18aba2be8649046abce2b19b5abdc1, type: 3}
       propertyPath: m_fontSizeBase
       value: 32

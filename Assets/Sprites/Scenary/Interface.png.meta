@@ -157,7 +157,7 @@ TextureImporter:
         width: 750
         height: 750
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 250, y: 250, z: 250, w: 250}
       outline: []
       physicsShape: []
@@ -165,6 +165,69 @@ TextureImporter:
       bones: []
       spriteID: 3431577fd15a17f41a7a5442cdd5be01
       internalID: -1215667285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interface_1
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 2750
+        width: 250
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60100346fcc3f5945bcc01e62f0509ed
+      internalID: 745069482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interface_2
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc902f63948cb5548b3076b5ef645433
+      internalID: 888794368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interface_3
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 2750
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a998cb9229dfcb4f8982b6f662d8b79
+      internalID: -1867550802
       vertices: []
       indices: 
       edges: []
@@ -181,6 +244,9 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Interface_0: -1215667285
+      Interface_1: 745069482
+      Interface_2: 888794368
+      Interface_3: -1867550802
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

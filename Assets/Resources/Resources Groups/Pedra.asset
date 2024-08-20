@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78e3d35f00271b3469260fc02d3b44bd, type: 3}
   m_Name: Pedra
   m_EditorClassIdentifier: 
-  type: Pedra
+  type: Rock
   baseColor: {r: 0.23891956, g: 0.4653658, b: 0.5566038, a: 1}
   items:
   - {fileID: 11400000, guid: f027a4d9d0cb52e489b24b5118982966, type: 2}

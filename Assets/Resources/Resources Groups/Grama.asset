@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78e3d35f00271b3469260fc02d3b44bd, type: 3}
   m_Name: Grama
   m_EditorClassIdentifier: 
-  type: Grama
+  type: Grass
   baseColor: {r: 0.017627195, g: 0.6792453, b: 0, a: 1}
   items:
   - {fileID: 11400000, guid: 5b557f34bbe2f8445a347bbc183578a0, type: 2}

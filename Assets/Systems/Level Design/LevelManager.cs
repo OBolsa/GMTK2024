@@ -12,6 +12,7 @@ public class LevelManager : MonoBehaviour
     public int totems;
     public List<SpawnArea> areas = new List<SpawnArea>();
     public List<WorkBench> workBench = new List<WorkBench>();
+    public List<BuffType> buffs = new List<BuffType>();
     private ResourceGroup[] itemGroups;
 
     public Action<int> LevelStarted;

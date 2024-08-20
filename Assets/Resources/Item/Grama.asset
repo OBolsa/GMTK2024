@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Grama
   itemDescription: 
-  itemSprite: {fileID: -716850702, guid: d475143a289a8a147a903369121946e7, type: 3}
+  itemSprite: {fileID: -1723662308, guid: 39f2b9f7a6aae754f8627c8377c59347, type: 3}
   itemSfx: {fileID: 8300000, guid: 13c670ce8d7512948be98001b6b92780, type: 3}
   itemBuffs: 
   itemLife: 3

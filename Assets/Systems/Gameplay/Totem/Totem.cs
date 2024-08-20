@@ -45,6 +45,7 @@ public class Totem : MonoBehaviour, IInteractable
 
             inventory.CleanTotemItemInfoList();
 
+            LevelManager.Instance.buffs = new List<BuffType>(buffs);
             LevelManager.Instance.attributes.UpdateBuffs(buffs);
             LevelManager.Instance.PlaceTotem();
 

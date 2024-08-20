@@ -13,13 +13,4 @@ MonoBehaviour:
   m_Name: PlayerInventory
   m_EditorClassIdentifier: 
   itemInventory: []
-  totemInventory:
-  - totemItemName: Cocar
-    totemItemBuffs: 01000000
-    totemItemSprite: {fileID: 0}
-  - totemItemName: Asa
-    totemItemBuffs: 03000000
-    totemItemSprite: {fileID: 0}
-  - totemItemName: Carranca
-    totemItemBuffs: 02000000
-    totemItemSprite: {fileID: 0}
+  totemInventory: []

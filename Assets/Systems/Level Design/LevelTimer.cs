@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class LevelTimer : MonoBehaviour
@@ -57,13 +56,5 @@ public class LevelTimer : MonoBehaviour
             InstantMessageHandler.instance.ShowMessage("PERDEU PLAYBOY");
             Debug.Log("PERDEU PLAYBOY");
         }
-    }
-
-    private void OnGUI()
-    {
-        TimeSpan timeSpan = TimeSpan.FromSeconds(currentTime);
-        string timeText = string.Format("{0:D2}:{1:D2}", timeSpan.Minutes, timeSpan.Seconds);
-
-        GUI.Label(new Rect(0, 0, 100, 100), timeText);
     }
 }

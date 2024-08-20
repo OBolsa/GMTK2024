@@ -1,5 +1,7 @@
 using System.IO;
+# if UNITY_EDITOR
 using UnityEditor;
+#endif
 using UnityEngine;
 
 public class ItemToolGenerator
@@ -7,6 +9,7 @@ public class ItemToolGenerator
     private static string itemsPath = "Assets/Resources/Item"; // Certifique-se de que está dentro de 'Resources'
     private static string itemListPath = "Item/itemList"; // Dentro da pasta 'Resources/Item'
 
+#if UNITY_EDITOR
     [MenuItem("Tools/GenerateItems")]
     private static void GenerateItems()
     {
@@ -49,4 +52,5 @@ public class ItemToolGenerator
             Debug.LogError("Item List not found");
         }
     }
+#endif
 }

@@ -52,7 +52,7 @@ public class Totem : MonoBehaviour, IInteractable
         }
         else
         {
-            InstantMessageHandler.instance.ShowMessage("Don't have all 3 toten parts");
+            InstantMessageHandler.instance.ShowMessage("Don't have all 3 totem parts");
             Debug.Log("N�o tem todas as partes");
         }
     }

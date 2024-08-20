@@ -1,10 +1,13 @@
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using UnityEngine;
 
 public class ResourcesTypeTools
 {
     public static string generalPath = "ResourcesTypes";
 
+#if UNITY_EDITOR
     [MenuItem("Tools/Level/Rename Resources Type Files")]
     private static void RenameFiles()
     {
@@ -27,4 +30,6 @@ public class ResourcesTypeTools
         }
 
     }
+#endif
+
 }

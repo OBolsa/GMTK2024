@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -47,7 +48,10 @@ public class JournalPanel : MonoBehaviour
 
     public void UpdateTimer(float time)
     {
-        missionTimer.text = time.ToString("F1");
+        TimeSpan timeSpan = TimeSpan.FromSeconds(time);
+        string timeText = string.Format("{0:D2}:{1:D2}", timeSpan.Minutes, timeSpan.Seconds);
+
+        missionTimer.text = timeText;
         timerImage.fillAmount = time / missionTime;
     }
 

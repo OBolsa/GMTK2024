@@ -53,7 +53,7 @@ public class LevelTimer : MonoBehaviour
         {
             isCounting = false;
             LevelManager.Instance.Fail();
-            InstantMessageHandler.instance.ShowMessage("PERDEU PLAYBOY");
+            InstantMessageHandler.instance.ShowMessage("Time's Up!");
             Debug.Log("PERDEU PLAYBOY");
         }
     }

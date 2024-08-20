@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
@@ -41,17 +43,24 @@ public class LevelManager : MonoBehaviour
     private void OnEnable()
     {
         TotemPartDone += UpdatePlayerDamage;
+        PlayerInputManager.Inputs.World.Quit.performed += LoadMainMenu;
     }
 
     private void OnDisable()
     {
         TotemPartDone -= UpdatePlayerDamage;
+        PlayerInputManager.Inputs.World.Quit.performed -= LoadMainMenu;
     }
 
     private void Start()
     {
         areas.ForEach(a => a.SetSpawnTransformersActive(false));
         PopulateItems();
+    }
+
+    private void LoadMainMenu(InputAction.CallbackContext context)
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void PlaceTotem()

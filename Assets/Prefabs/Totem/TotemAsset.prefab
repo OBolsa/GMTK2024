@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6771017625908833318}
   - component: {fileID: 5932787192485253577}
+  - component: {fileID: 477485134992960287}
   m_Layer: 0
   m_Name: Azul
   m_TagString: Untagged
@@ -71,7 +72,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -997363061
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 11
   m_Sprite: {fileID: 1766039682, guid: 754f0fce18d08f14f99f53f51b66de45, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -84,6 +85,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &477485134992960287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 359100550738339927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65e189c2f1eb534dbcd17ab9ac10499, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sr: {fileID: 5932787192485253577}
+  liveUpdate: 0
 --- !u!1 &496299241614078565
 GameObject:
   m_ObjectHideFlags: 0
@@ -5182,7 +5197,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -997363061
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 2
   m_RenderMode: 0
   m_MeshDistribution: 0
@@ -10070,7 +10085,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -997363061
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_RenderMode: 0
   m_MeshDistribution: 0
@@ -14958,7 +14973,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -997363061
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 2
   m_RenderMode: 0
   m_MeshDistribution: 0
@@ -19880,7 +19895,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -997363061
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 1
   m_RenderMode: 1
   m_MeshDistribution: 0
@@ -19924,6 +19939,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6996255254286199998}
   - component: {fileID: 8534975450921293759}
+  - component: {fileID: 3788899357584323544}
   m_Layer: 0
   m_Name: Base
   m_TagString: Untagged
@@ -19989,7 +20005,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -997363061
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 10
   m_Sprite: {fileID: 1427236435, guid: 754f0fce18d08f14f99f53f51b66de45, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -20002,6 +20018,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3788899357584323544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2506868321365603860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65e189c2f1eb534dbcd17ab9ac10499, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sr: {fileID: 8534975450921293759}
+  liveUpdate: 0
 --- !u!1 &3529479065625470996
 GameObject:
   m_ObjectHideFlags: 0
@@ -20012,6 +20042,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6735966742317428001}
   - component: {fileID: 6335139006660699581}
+  - component: {fileID: 7933900192118141485}
   m_Layer: 0
   m_Name: Amarelo
   m_TagString: Untagged
@@ -20073,7 +20104,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -997363061
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 11
   m_Sprite: {fileID: 1051891570, guid: 754f0fce18d08f14f99f53f51b66de45, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -20086,6 +20117,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7933900192118141485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3529479065625470996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65e189c2f1eb534dbcd17ab9ac10499, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sr: {fileID: 6335139006660699581}
+  liveUpdate: 0
 --- !u!1 &3759260053027935919
 GameObject:
   m_ObjectHideFlags: 0
@@ -24927,6 +24972,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5459497949415098329}
   - component: {fileID: 4541971733056311450}
+  - component: {fileID: 5953016789988353708}
   m_Layer: 0
   m_Name: Vermelho
   m_TagString: Untagged
@@ -24988,7 +25034,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -997363061
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 11
   m_Sprite: {fileID: 1282621588, guid: 754f0fce18d08f14f99f53f51b66de45, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -25001,6 +25047,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5953016789988353708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3955255328121976029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65e189c2f1eb534dbcd17ab9ac10499, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sr: {fileID: 4541971733056311450}
+  liveUpdate: 0
 --- !u!1 &5078005291487488197
 GameObject:
   m_ObjectHideFlags: 0
@@ -29855,7 +29915,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -997363061
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 2
   m_RenderMode: 0
   m_MeshDistribution: 0
@@ -29899,6 +29959,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7177112819883611892}
   - component: {fileID: 8533232947075689415}
+  - component: {fileID: 8830318769648012233}
   m_Layer: 0
   m_Name: Azul
   m_TagString: Untagged
@@ -29960,7 +30021,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -997363061
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 11
   m_Sprite: {fileID: 868203118, guid: 754f0fce18d08f14f99f53f51b66de45, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -29973,6 +30034,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8830318769648012233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5587486973545740975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65e189c2f1eb534dbcd17ab9ac10499, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sr: {fileID: 8533232947075689415}
+  liveUpdate: 0
 --- !u!1 &5822002713203736134
 GameObject:
   m_ObjectHideFlags: 0
@@ -29983,6 +30058,7 @@ GameObject:
   m_Component:
   - component: {fileID: 834991807045620911}
   - component: {fileID: 7948949045129394376}
+  - component: {fileID: 6423516732498293674}
   m_Layer: 0
   m_Name: Vermelho
   m_TagString: Untagged
@@ -30044,7 +30120,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -997363061
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 11
   m_Sprite: {fileID: 1928373136, guid: 754f0fce18d08f14f99f53f51b66de45, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -30057,6 +30133,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6423516732498293674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5822002713203736134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65e189c2f1eb534dbcd17ab9ac10499, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sr: {fileID: 7948949045129394376}
+  liveUpdate: 0
 --- !u!1 &6261737824150104825
 GameObject:
   m_ObjectHideFlags: 0
@@ -30067,6 +30157,7 @@ GameObject:
   m_Component:
   - component: {fileID: 342496225544380296}
   - component: {fileID: 4879499056352904164}
+  - component: {fileID: 7596053417095337676}
   m_Layer: 0
   m_Name: Vermelho
   m_TagString: Untagged
@@ -30128,7 +30219,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -997363061
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 11
   m_Sprite: {fileID: -1791548899, guid: 754f0fce18d08f14f99f53f51b66de45, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -30141,6 +30232,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7596053417095337676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6261737824150104825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65e189c2f1eb534dbcd17ab9ac10499, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sr: {fileID: 4879499056352904164}
+  liveUpdate: 0
 --- !u!1 &6968375249170884058
 GameObject:
   m_ObjectHideFlags: 0
@@ -30151,6 +30256,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2802695805110098072}
   - component: {fileID: 18949191158377815}
+  - component: {fileID: 1871462594532902021}
   m_Layer: 0
   m_Name: Azul
   m_TagString: Untagged
@@ -30212,7 +30318,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -997363061
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 11
   m_Sprite: {fileID: -264813629, guid: 754f0fce18d08f14f99f53f51b66de45, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -30225,6 +30331,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1871462594532902021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6968375249170884058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65e189c2f1eb534dbcd17ab9ac10499, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sr: {fileID: 18949191158377815}
+  liveUpdate: 0
 --- !u!1 &8162415806413191796
 GameObject:
   m_ObjectHideFlags: 0
@@ -30235,6 +30355,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5785038146429344894}
   - component: {fileID: 8560219202994737077}
+  - component: {fileID: 5767294329073570479}
   m_Layer: 0
   m_Name: Amarelo
   m_TagString: Untagged
@@ -30296,7 +30417,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -997363061
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 11
   m_Sprite: {fileID: 673213088, guid: 754f0fce18d08f14f99f53f51b66de45, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -30309,6 +30430,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5767294329073570479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8162415806413191796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65e189c2f1eb534dbcd17ab9ac10499, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sr: {fileID: 8560219202994737077}
+  liveUpdate: 0
 --- !u!1 &8334984836295381779
 GameObject:
   m_ObjectHideFlags: 0
@@ -40114,7 +40249,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -997363061
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 1
   m_RenderMode: 1
   m_MeshDistribution: 0
@@ -40158,6 +40293,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7285143780872685955}
   - component: {fileID: 7738914403858695694}
+  - component: {fileID: 4854309342158268609}
   m_Layer: 0
   m_Name: Amarelo
   m_TagString: Untagged
@@ -40219,7 +40355,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -997363061
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 11
   m_Sprite: {fileID: -1106769643, guid: 754f0fce18d08f14f99f53f51b66de45, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -40232,6 +40368,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4854309342158268609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8715008484342282311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65e189c2f1eb534dbcd17ab9ac10499, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sr: {fileID: 7738914403858695694}
+  liveUpdate: 0
 --- !u!1 &8844287416469590620
 GameObject:
   m_ObjectHideFlags: 0

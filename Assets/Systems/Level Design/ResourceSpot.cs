@@ -16,6 +16,6 @@ public class ResourceSpot : MonoBehaviour
     public void GiveItemToPlayer(PlayerInventorySO inventory)
     {
         inventory.AddItemToInventory(resourceItem);
-        
+
     }
 }

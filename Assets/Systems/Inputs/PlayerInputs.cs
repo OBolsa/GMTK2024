@@ -71,6 +71,15 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Quit"",
+                    ""type"": ""Button"",
+                    ""id"": ""1e6dc45e-a2a7-4803-a17a-bcf212875369"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -142,6 +151,17 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""92eb5df3-d622-4a59-af63-1981a492fa28"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Action"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""b89bbd9c-80a6-4fbc-9009-e2a8c045aa45"",
                     ""path"": ""<Keyboard>/p"",
                     ""interactions"": """",
@@ -172,6 +192,17 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
                     ""action"": ""MoveMouse"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b9107bfe-94f1-446b-a800-906d9fabe764"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Quit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -191,6 +222,7 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
         m_World_Pause = m_World.FindAction("Pause", throwIfNotFound: true);
         m_World_ClickLetf = m_World.FindAction("ClickLetf", throwIfNotFound: true);
         m_World_MoveMouse = m_World.FindAction("MoveMouse", throwIfNotFound: true);
+        m_World_Quit = m_World.FindAction("Quit", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -257,6 +289,7 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
     private readonly InputAction m_World_Pause;
     private readonly InputAction m_World_ClickLetf;
     private readonly InputAction m_World_MoveMouse;
+    private readonly InputAction m_World_Quit;
     public struct WorldActions
     {
         private @PlayerInputs m_Wrapper;
@@ -266,6 +299,7 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
         public InputAction @Pause => m_Wrapper.m_World_Pause;
         public InputAction @ClickLetf => m_Wrapper.m_World_ClickLetf;
         public InputAction @MoveMouse => m_Wrapper.m_World_MoveMouse;
+        public InputAction @Quit => m_Wrapper.m_World_Quit;
         public InputActionMap Get() { return m_Wrapper.m_World; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -290,6 +324,9 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
             @MoveMouse.started += instance.OnMoveMouse;
             @MoveMouse.performed += instance.OnMoveMouse;
             @MoveMouse.canceled += instance.OnMoveMouse;
+            @Quit.started += instance.OnQuit;
+            @Quit.performed += instance.OnQuit;
+            @Quit.canceled += instance.OnQuit;
         }
 
         private void UnregisterCallbacks(IWorldActions instance)
@@ -309,6 +346,9 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
             @MoveMouse.started -= instance.OnMoveMouse;
             @MoveMouse.performed -= instance.OnMoveMouse;
             @MoveMouse.canceled -= instance.OnMoveMouse;
+            @Quit.started -= instance.OnQuit;
+            @Quit.performed -= instance.OnQuit;
+            @Quit.canceled -= instance.OnQuit;
         }
 
         public void RemoveCallbacks(IWorldActions instance)
@@ -342,5 +382,6 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
         void OnPause(InputAction.CallbackContext context);
         void OnClickLetf(InputAction.CallbackContext context);
         void OnMoveMouse(InputAction.CallbackContext context);
+        void OnQuit(InputAction.CallbackContext context);
     }
 }

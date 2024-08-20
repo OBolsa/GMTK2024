@@ -1,15 +1,27 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerInteractor : MonoBehaviour
 {
     private bool stepingOnInteraction;
     IInteractable interactableObject;
 
-    void Update()
+    private void OnEnable()
     {
+        PlayerInputManager.Inputs.World.Action.performed += DoInteraction;
+    }
 
-        if (interactableObject != null && PlayerInputManager.Inputs.World.Action.triggered) interactableObject.Interact();
+    private void OnDisable()
+    {
+        PlayerInputManager.Inputs.World.Action.performed -= DoInteraction;
+    }
 
+    private void DoInteraction(InputAction.CallbackContext context)
+    {
+        if (interactableObject != null)
+        {
+            interactableObject.Interact();
+        }
     }
 
 

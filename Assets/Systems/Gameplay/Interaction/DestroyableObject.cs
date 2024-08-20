@@ -9,6 +9,8 @@ public class DestroyableObject : MonoBehaviour, IInteractable
     [SerializeField]
     private float maxHealth;
     private float currentHealth;
+    public Animator anim;
+    public ParticleSystem feedbackHit;
 
     public UnityEvent OnDestroy;
     private ParticleHandler myParticles;
@@ -30,11 +32,11 @@ public class DestroyableObject : MonoBehaviour, IInteractable
 
     public void SetupDestroyable(ItemInfo item)
     {
-        if(lifeGauge != null) lifeGauge.fillAmount = 1;
+        if (lifeGauge != null) lifeGauge.fillAmount = 1;
         this.maxHealth = item.itemLife;
         this.currentHealth = this.maxHealth;
         this.hitSfx = item.itemSfx;
-       
+
     }
 
     public void Interact()
@@ -50,8 +52,24 @@ public class DestroyableObject : MonoBehaviour, IInteractable
             lifeGauge.fillAmount = (float)(currentHealth / maxHealth);
             if (myParticles != null) myParticles.PlayVFX();
             AudioManager.instance.PlaySfx(hitSfx);
+            FeedbackHit();
 
             if (currentHealth <= 0) Die();
+        }
+    }
+
+    public void FeedbackHit()
+    {
+        Debug.Log("Feedback Hit!");
+
+        if (anim != null)
+        {
+            anim.SetTrigger("hit");
+        }
+
+        if (feedbackHit != null)
+        {
+            feedbackHit.Play();
         }
     }
 
@@ -64,6 +82,6 @@ public class DestroyableObject : MonoBehaviour, IInteractable
     private void Die()
     {
         AudioManager.instance.PlaySfx(SFXs.SMASH_BUMP);
-       OnDestroy?.Invoke();
+        OnDestroy?.Invoke();
     }
 }

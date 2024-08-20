@@ -50,6 +50,9 @@ TagManager:
   - name: GamePlay
     uniqueID: 3297604235
     locked: 0
+  - name: Effects
+    uniqueID: 2134744849
+    locked: 0
   - name: UI
     uniqueID: 3049009567
     locked: 0

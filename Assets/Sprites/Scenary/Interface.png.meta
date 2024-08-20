@@ -178,7 +178,7 @@ TextureImporter:
         width: 250
         height: 249
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -199,7 +199,7 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -220,7 +220,7 @@ TextureImporter:
         width: 250
         height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -228,6 +228,27 @@ TextureImporter:
       bones: []
       spriteID: 5a998cb9229dfcb4f8982b6f662d8b79
       internalID: -1867550802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interface_4
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 2500
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1373a032d2abe4041844023897784c64
+      internalID: -1455912156
       vertices: []
       indices: 
       edges: []
@@ -247,6 +268,7 @@ TextureImporter:
       Interface_1: 745069482
       Interface_2: 888794368
       Interface_3: -1867550802
+      Interface_4: -1455912156
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

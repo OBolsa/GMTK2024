@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameOverManager : MonoBehaviour
 {
@@ -17,18 +15,18 @@ public class GameOverManager : MonoBehaviour
         gameOverPanel.SetActive(false);
     }
 
-    public void GameOver() 
+    public void GameOver()
     {
 
         Time.timeScale = 0.5f;
-        gameOverPanel.SetActive(true);    
+        gameOverPanel.SetActive(true);
     }
-    
-    void RestartGame() 
+
+    void RestartGame()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene("Level");
-    
+        SceneManager.LoadScene("Level 1");
+
     }
 
 }
